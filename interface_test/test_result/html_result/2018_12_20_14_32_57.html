@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WEB自动化测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">WEB自动化测试报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 王波</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-12-20 14:32:57</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:09.361018</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 26，错误 26，通过率= 0.00%</p>
+
+<p class='description'>执行情况如下</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 26 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>test_case.http_request_case.Http_test</td>
+    <td class="text-center">26</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">26</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',26)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='ft1_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_01</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse in" align="left">
+    <pre>
+    
+ft1_1: [2018-12-20 14:32:57,370] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_01开始执行
+[2018-12-20 14:32:57,701] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:57,701] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:57,711] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-20 14:32:57,711] [INFO] 你的预期结果是:注册成功
+[2018-12-20 14:32:57,711] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-20 14:32:57,711] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 19, in test_1register
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '手机号码已被注册' != '注册成功'
+- 手机号码已被注册
++ 注册成功
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_02</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <div id='div_ft1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <div id='div_ft1_2' class="collapse in" align="left">
+    <pre>
+    
+ft1_2: [2018-12-20 14:32:57,811] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_02开始执行
+[2018-12-20 14:32:58,002] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:58,002] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:58,002] [INFO] 你的请求参数是:{'mobilephone': '18611223355', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2018-12-20 14:32:58,002] [INFO] 你的预期结果是:注册成功
+[2018-12-20 14:32:58,002] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-20 14:32:58,012] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 19, in test_1register
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '手机号码已被注册' != '注册成功'
+- 手机号码已被注册
++ 注册成功
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_03</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
+    <div id='div_ft1_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
+    <div id='div_ft1_3' class="collapse in" align="left">
+    <pre>
+    
+ft1_3: [2018-12-20 14:32:58,072] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_03开始执行
+[2018-12-20 14:32:58,422] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:58,422] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:58,422] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2018-12-20 14:32:58,422] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-20 14:32:58,422] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-20 14:32:58,422] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_04</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
+    <div id='div_ft1_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
+    <div id='div_ft1_4' class="collapse in" align="left">
+    <pre>
+    
+ft1_4: [2018-12-20 14:32:58,482] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_04开始执行
+[2018-12-20 14:32:58,723] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:58,723] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:58,723] [INFO] 你的请求参数是:{'mobilephone': '18611002233', 'pwd': '', 'regname': '简'}
+[2018-12-20 14:32:58,723] [INFO] 你的预期结果是:密码不能为空
+[2018-12-20 14:32:58,723] [INFO] 请求的实际结果是:密码不能为空
+[2018-12-20 14:32:58,723] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_05</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_5'>错误</button>
+    <div id='div_ft1_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_5'>错误</button>
+    <div id='div_ft1_5' class="collapse in" align="left">
+    <pre>
+    
+ft1_5: [2018-12-20 14:32:58,783] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_05开始执行
+[2018-12-20 14:32:58,973] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:58,973] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:58,973] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-20 14:32:58,973] [INFO] 你的预期结果是:手机号码已被注册
+[2018-12-20 14:32:58,983] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-20 14:32:58,983] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_06</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_6'>错误</button>
+    <div id='div_ft1_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_6'>错误</button>
+    <div id='div_ft1_6' class="collapse in" align="left">
+    <pre>
+    
+ft1_6: [2018-12-20 14:32:59,053] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_06开始执行
+[2018-12-20 14:32:59,234] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:59,234] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:59,234] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890123456789'}
+[2018-12-20 14:32:59,234] [INFO] 你的预期结果是:密码长度必须为6~18
+[2018-12-20 14:32:59,234] [INFO] 请求的实际结果是:密码长度必须为6~18
+[2018-12-20 14:32:59,234] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_07</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_7'>错误</button>
+    <div id='div_ft1_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_7'>错误</button>
+    <div id='div_ft1_7' class="collapse in" align="left">
+    <pre>
+    
+ft1_7: [2018-12-20 14:32:59,284] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_07开始执行
+[2018-12-20 14:32:59,554] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:59,554] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:59,554] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '12345'}
+[2018-12-20 14:32:59,554] [INFO] 你的预期结果是:密码长度必须为6~18
+[2018-12-20 14:32:59,554] [INFO] 请求的实际结果是:密码长度必须为6~18
+[2018-12-20 14:32:59,564] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_08</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_8'>错误</button>
+    <div id='div_ft1_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_8'>错误</button>
+    <div id='div_ft1_8' class="collapse in" align="left">
+    <pre>
+    
+ft1_8: [2018-12-20 14:32:59,614] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_08开始执行
+[2018-12-20 14:32:59,825] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:32:59,825] [INFO] 你的请求方式是:post
+[2018-12-20 14:32:59,825] [INFO] 你的请求参数是:{'mobilephone': '135508485233', 'pwd': '1234567890'}
+[2018-12-20 14:32:59,825] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-20 14:32:59,825] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-20 14:32:59,825] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_09</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_9'>错误</button>
+    <div id='div_ft1_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_9'>错误</button>
+    <div id='div_ft1_9' class="collapse in" align="left">
+    <pre>
+    
+ft1_9: [2018-12-20 14:32:59,885] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_09开始执行
+[2018-12-20 14:33:00,095] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:33:00,095] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:00,095] [INFO] 你的请求参数是:{'mobilephone': '1861122334', 'pwd': '1234567890'}
+[2018-12-20 14:33:00,095] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-20 14:33:00,095] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-20 14:33:00,095] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_1register_10</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_10'>错误</button>
+    <div id='div_ft1_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_10'>错误</button>
+    <div id='div_ft1_10' class="collapse in" align="left">
+    <pre>
+    
+ft1_10: [2018-12-20 14:33:00,165] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_10开始执行
+[2018-12-20 14:33:00,396] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2018-12-20 14:33:00,396] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:00,396] [INFO] 你的请求参数是:{'mobilephone': '1861122334a', 'pwd': '1234567890'}
+[2018-12-20 14:33:00,396] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-20 14:33:00,406] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-20 14:33:00,406] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_11' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2login_01</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_11'>错误</button>
+    <div id='div_ft1_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_11'>错误</button>
+    <div id='div_ft1_11' class="collapse in" align="left">
+    <pre>
+    
+ft1_11: [2018-12-20 14:33:00,476] [INFO] 测试用例test_case.http_request_case.Http_test_test_2login_01开始执行
+[2018-12-20 14:33:00,706] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-20 14:33:00,706] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:00,706] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-20 14:33:00,706] [INFO] 你的预期结果是:登录成功
+[2018-12-20 14:33:00,706] [INFO] 请求的实际结果是:登录成功
+[2018-12-20 14:33:00,706] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_12' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2login_02</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_12'>错误</button>
+    <div id='div_ft1_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_12'>错误</button>
+    <div id='div_ft1_12' class="collapse in" align="left">
+    <pre>
+    
+ft1_12: [2018-12-20 14:33:00,766] [INFO] 测试用例test_case.http_request_case.Http_test_test_2login_02开始执行
+[2018-12-20 14:33:00,937] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-20 14:33:00,937] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:00,937] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890'}
+[2018-12-20 14:33:00,937] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-20 14:33:00,937] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-20 14:33:00,937] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_13' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2login_03</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_13'>错误</button>
+    <div id='div_ft1_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_13'>错误</button>
+    <div id='div_ft1_13' class="collapse in" align="left">
+    <pre>
+    
+ft1_13: [2018-12-20 14:33:00,997] [INFO] 测试用例test_case.http_request_case.Http_test_test_2login_03开始执行
+[2018-12-20 14:33:01,207] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-20 14:33:01,207] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:01,207] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': ''}
+[2018-12-20 14:33:01,207] [INFO] 你的预期结果是:密码不能为空
+[2018-12-20 14:33:01,207] [INFO] 请求的实际结果是:密码不能为空
+[2018-12-20 14:33:01,207] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_14' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2login_04</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_14'>错误</button>
+    <div id='div_ft1_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_14'>错误</button>
+    <div id='div_ft1_14' class="collapse in" align="left">
+    <pre>
+    
+ft1_14: [2018-12-20 14:33:01,267] [INFO] 测试用例test_case.http_request_case.Http_test_test_2login_04开始执行
+[2018-12-20 14:33:01,508] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-20 14:33:01,508] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:01,508] [INFO] 你的请求参数是:{'mobilephone': '13550848524', 'pwd': '123456789'}
+[2018-12-20 14:33:01,508] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-20 14:33:01,508] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-20 14:33:01,508] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_15' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2login_05</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_15'>错误</button>
+    <div id='div_ft1_15' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_15'>错误</button>
+    <div id='div_ft1_15' class="collapse in" align="left">
+    <pre>
+    
+ft1_15: [2018-12-20 14:33:01,568] [INFO] 测试用例test_case.http_request_case.Http_test_test_2login_05开始执行
+[2018-12-20 14:33:01,788] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-20 14:33:01,788] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:01,788] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '123456789'}
+[2018-12-20 14:33:01,788] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-20 14:33:01,788] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-20 14:33:01,788] [INFO] 测试用例开始执行的结果是:Pass
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_16' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_01</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_16'>错误</button>
+    <div id='div_ft1_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_16'>错误</button>
+    <div id='div_ft1_16' class="collapse in" align="left">
+    <pre>
+    
+ft1_16: [2018-12-20 14:33:01,868] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_01开始执行
+[2018-12-20 14:33:02,409] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:02,409] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:02,409] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 0.01}
+[2018-12-20 14:33:02,409] [INFO] 你的预期结果是:充值成功
+[2018-12-20 14:33:02,409] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:02,409] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '充值成功'
+- 抱歉，请先登录。
++ 充值成功
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_17' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_02</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_17'>错误</button>
+    <div id='div_ft1_17' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_17' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_17'>错误</button>
+    <div id='div_ft1_17' class="collapse in" align="left">
+    <pre>
+    
+ft1_17: [2018-12-20 14:33:02,469] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_02开始执行
+[2018-12-20 14:33:02,750] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:02,750] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:02,750] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-20 14:33:02,760] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-20 14:33:02,760] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:02,760] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '手机号不能为空'
+- 抱歉，请先登录。
++ 手机号不能为空
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_18' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_03</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_18'>错误</button>
+    <div id='div_ft1_18' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_18' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_18'>错误</button>
+    <div id='div_ft1_18' class="collapse in" align="left">
+    <pre>
+    
+ft1_18: [2018-12-20 14:33:02,830] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_03开始执行
+[2018-12-20 14:33:03,140] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:03,140] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:03,140] [INFO] 你的请求参数是:{'mobilephone': '13550848389', 'amount': 50.1}
+[2018-12-20 14:33:03,140] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-20 14:33:03,140] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:03,140] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '此手机号对应的会员不存在'
+- 抱歉，请先登录。
++ 此手机号对应的会员不存在
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_19' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_04</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_19' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_19'>错误</button>
+    <div id='div_ft1_19' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_19' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_19'>错误</button>
+    <div id='div_ft1_19' class="collapse in" align="left">
+    <pre>
+    
+ft1_19: [2018-12-20 14:33:03,200] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_04开始执行
+[2018-12-20 14:33:03,501] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:03,501] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:03,501] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-20 14:33:03,501] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-20 14:33:03,501] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:03,501] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '手机号码格式不正确'
+- 抱歉，请先登录。
++ 手机号码格式不正确
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_20' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_05</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_20' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_20'>错误</button>
+    <div id='div_ft1_20' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_20' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_20'>错误</button>
+    <div id='div_ft1_20' class="collapse in" align="left">
+    <pre>
+    
+ft1_20: [2018-12-20 14:33:03,571] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_05开始执行
+[2018-12-20 14:33:03,932] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:03,932] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:03,932] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-20 14:33:03,932] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-20 14:33:03,932] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:03,932] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '手机号码格式不正确'
+- 抱歉，请先登录。
++ 手机号码格式不正确
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_21' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_06</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_21' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_21'>错误</button>
+    <div id='div_ft1_21' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_21' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_21'>错误</button>
+    <div id='div_ft1_21' class="collapse in" align="left">
+    <pre>
+    
+ft1_21: [2018-12-20 14:33:04,002] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_06开始执行
+[2018-12-20 14:33:04,364] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:04,364] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:04,364] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-20 14:33:04,374] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-20 14:33:04,374] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:04,374] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '手机号码格式不正确'
+- 抱歉，请先登录。
++ 手机号码格式不正确
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_22' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_07</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_22' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_22'>错误</button>
+    <div id='div_ft1_22' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_22' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_22'>错误</button>
+    <div id='div_ft1_22' class="collapse in" align="left">
+    <pre>
+    
+ft1_22: [2018-12-20 14:33:04,436] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_07开始执行
+[2018-12-20 14:33:04,937] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:04,937] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:04,937] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': ''}
+[2018-12-20 14:33:04,937] [INFO] 你的预期结果是:请输入金额
+[2018-12-20 14:33:04,937] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:04,937] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '请输入金额'
+- 抱歉，请先登录。
++ 请输入金额
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_23' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_08</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_23' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_23'>错误</button>
+    <div id='div_ft1_23' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_23' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_23'>错误</button>
+    <div id='div_ft1_23' class="collapse in" align="left">
+    <pre>
+    
+ft1_23: [2018-12-20 14:33:05,017] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_08开始执行
+[2018-12-20 14:33:05,378] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:05,378] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:05,378] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 50.123}
+[2018-12-20 14:33:05,378] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-20 14:33:05,378] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:05,378] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '输入金额的金额小数不能超过两位'
+- 抱歉，请先登录。
++ 输入金额的金额小数不能超过两位
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_24' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_09</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_24' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_24'>错误</button>
+    <div id='div_ft1_24' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_24' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_24'>错误</button>
+    <div id='div_ft1_24' class="collapse in" align="left">
+    <pre>
+    
+ft1_24: [2018-12-20 14:33:05,448] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_09开始执行
+[2018-12-20 14:33:05,780] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:05,780] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:05,780] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 500000.01}
+[2018-12-20 14:33:05,780] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-20 14:33:05,780] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:05,780] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '请输入范围在0到50万之间的正数金额'
+- 抱歉，请先登录。
++ 请输入范围在0到50万之间的正数金额
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_25' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_10</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_25' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_25'>错误</button>
+    <div id='div_ft1_25' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_25' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_25'>错误</button>
+    <div id='div_ft1_25' class="collapse in" align="left">
+    <pre>
+    
+ft1_25: [2018-12-20 14:33:05,850] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_10开始执行
+[2018-12-20 14:33:06,200] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:06,210] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:06,210] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': -0.01}
+[2018-12-20 14:33:06,210] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-20 14:33:06,210] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:06,210] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '请输入范围在0到50万之间的正数金额'
+- 抱歉，请先登录。
++ 请输入范围在0到50万之间的正数金额
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_26' class='none'>
+    <td class='errorCase'><div class='testcase'>test_3recharge_11</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_26' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_26'>错误</button>
+    <div id='div_ft1_26' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_26' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_26'>错误</button>
+    <div id='div_ft1_26' class="collapse in" align="left">
+    <pre>
+    
+ft1_26: [2018-12-20 14:33:06,270] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_11开始执行
+[2018-12-20 14:33:06,681] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-20 14:33:06,681] [INFO] 你的请求方式是:post
+[2018-12-20 14:33:06,681] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 'a.01'}
+[2018-12-20 14:33:06,681] [INFO] 你的预期结果是:请输入数字
+[2018-12-20 14:33:06,681] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-20 14:33:06,681] [ERROR] 测试用例开始执行的结果是:Fail
+Traceback (most recent call last):
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 18, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\http_request_case.py", line 36, in test_3recharge
+    self.assertEqual(actual,item.expect["msg"])
+  File "C:\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python37\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '抱歉，请先登录。' != '请输入数字'
+- 抱歉，请先登录。
++ 请输入数字
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 33, in new_name
+    write_excel.write_excel(kwg[1].sheet_name,kwg[1].id+1,7,kwg[1].actual)
+  File "E:\python\interface_test\comm\DO_excel.py", line 48, in write_excel
+    wb.save(self.excel_path)
+  File "C:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 391, in save
+    save_workbook(self, filename)
+  File "C:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 282, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\python\\interface_test\\test_data/testdatas.xlsx'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>26</td>
+    <td>0</td>
+    <td>0</td>
+    <td>26</td>
+    <td>通过率：0.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>

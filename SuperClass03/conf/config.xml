@@ -1,0 +1,25 @@
+<config>
+	<!-- 被测服务器的ip信息 -->
+	<ipinfo>
+		<protocol>http</protocol>
+		<ip>172.31.31.100</ip>
+		<port>8200</port>
+	</ipinfo>
+	<!-- 被测服务器的db信息 -->
+	<dbinfo>
+		<dbname>p2p3</dbname>
+		<dbuser>root</dbuser>
+		<dbpasswd>123456</dbpasswd>
+	</dbinfo>
+	<!-- 浏览器驱动类型相关信息，驱动默认已经添加到Path中 -->
+	<browserinfo>
+		<default>chrome</default>
+		<type>ie,firefox,chrome</type>
+	</browserinfo>
+	<!-- 智能等待超时时间 -->
+	<timeout>10</timeout>
+	<!-- 默认速度 -->
+	<defaultspeed>0</defaultspeed>
+	<!-- 异常时，放慢速度：实例化SeleniumDriver类时需要指明type的类型。数字也大，速度越慢，为1则表示放慢1秒 -->
+	<exceptspeed>3</exceptspeed>
+</config>

@@ -1,0 +1,116 @@
+[2018-12-25 11:48:57,409] [INFO] 测试用例test_case.login.Http_test_test_2login_1开始执行
+[2018-12-25 11:48:57,616] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:48:57,616] [INFO] 你的请求方式是:post
+[2018-12-25 11:48:57,616] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-25 11:48:57,616] [INFO] 你的预期结果是:登录成功
+[2018-12-25 11:48:57,616] [INFO] 请求的实际结果是:登录成功
+[2018-12-25 11:48:57,616] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:48:57,876] [INFO] 测试用例test_case.login.Http_test_test_2login_1结束执行,一共执行1.0947000000038898e-05
+[2018-12-25 11:48:57,876] [INFO] 测试用例test_case.login.Http_test_test_2login_2开始执行
+[2018-12-25 11:48:58,046] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:48:58,046] [INFO] 你的请求方式是:post
+[2018-12-25 11:48:58,046] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890'}
+[2018-12-25 11:48:58,046] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-25 11:48:58,046] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-25 11:48:58,046] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:48:58,301] [INFO] 测试用例test_case.login.Http_test_test_2login_2结束执行,一共执行6.157999999922836e-06
+[2018-12-25 11:48:58,304] [INFO] 测试用例test_case.login.Http_test_test_2login_3开始执行
+[2018-12-25 11:48:58,498] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:48:58,498] [INFO] 你的请求方式是:post
+[2018-12-25 11:48:58,498] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': ''}
+[2018-12-25 11:48:58,498] [INFO] 你的预期结果是:密码不能为空
+[2018-12-25 11:48:58,498] [INFO] 请求的实际结果是:密码不能为空
+[2018-12-25 11:48:58,498] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:48:58,751] [INFO] 测试用例test_case.login.Http_test_test_2login_3结束执行,一共执行6.157999999700792e-06
+[2018-12-25 11:48:58,751] [INFO] 测试用例test_case.login.Http_test_test_2login_4开始执行
+[2018-12-25 11:48:59,122] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:48:59,132] [INFO] 你的请求方式是:post
+[2018-12-25 11:48:59,132] [INFO] 你的请求参数是:{"mobilephone":"${register_phoneIsNew}","pwd":"123456789"}
+[2018-12-25 11:48:59,132] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-25 11:48:59,132] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-25 11:48:59,142] [INFO] 测试用例test_case.login.Http_test_test_2login_5开始执行
+[2018-12-25 11:48:59,312] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:48:59,312] [INFO] 你的请求方式是:post
+[2018-12-25 11:48:59,312] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '123456789'}
+[2018-12-25 11:48:59,312] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-25 11:48:59,312] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-25 11:48:59,312] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:48:59,544] [INFO] 测试用例test_case.login.Http_test_test_2login_5结束执行,一共执行0.000394096000000399
+[2018-12-25 11:49:52,436] [INFO] 测试用例test_case.login.Http_test_test_2login_1开始执行
+[2018-12-25 11:49:52,598] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:49:52,598] [INFO] 你的请求方式是:post
+[2018-12-25 11:49:52,598] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-25 11:49:52,598] [INFO] 你的预期结果是:登录成功
+[2018-12-25 11:49:52,598] [INFO] 请求的实际结果是:登录成功
+[2018-12-25 11:49:52,598] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:49:52,860] [INFO] 测试用例test_case.login.Http_test_test_2login_1结束执行,一共执行9.579000000092819e-06
+[2018-12-25 11:49:52,860] [INFO] 测试用例test_case.login.Http_test_test_2login_2开始执行
+[2018-12-25 11:49:53,040] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:49:53,040] [INFO] 你的请求方式是:post
+[2018-12-25 11:49:53,040] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890'}
+[2018-12-25 11:49:53,040] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-25 11:49:53,040] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-25 11:49:53,040] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:49:53,290] [INFO] 测试用例test_case.login.Http_test_test_2login_2结束执行,一共执行6.841999999895876e-06
+[2018-12-25 11:49:53,290] [INFO] 测试用例test_case.login.Http_test_test_2login_3开始执行
+[2018-12-25 11:49:53,470] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:49:53,470] [INFO] 你的请求方式是:post
+[2018-12-25 11:49:53,470] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': ''}
+[2018-12-25 11:49:53,470] [INFO] 你的预期结果是:密码不能为空
+[2018-12-25 11:49:53,470] [INFO] 请求的实际结果是:密码不能为空
+[2018-12-25 11:49:53,470] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:49:53,742] [INFO] 测试用例test_case.login.Http_test_test_2login_3结束执行,一共执行6.158000000144881e-06
+[2018-12-25 11:49:53,742] [INFO] 测试用例test_case.login.Http_test_test_2login_4开始执行
+[2018-12-25 11:49:54,223] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:49:54,223] [INFO] 你的请求方式是:post
+[2018-12-25 11:49:54,223] [INFO] 你的请求参数是:{"mobilephone":"${register_phoneIsNew}","pwd":"123456789"}
+[2018-12-25 11:49:54,223] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-25 11:49:54,223] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-25 11:49:54,223] [INFO] 测试用例test_case.login.Http_test_test_2login_5开始执行
+[2018-12-25 11:49:54,403] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:49:54,403] [INFO] 你的请求方式是:post
+[2018-12-25 11:49:54,403] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '123456789'}
+[2018-12-25 11:49:54,403] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-25 11:49:54,403] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-25 11:49:54,403] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:49:54,633] [INFO] 测试用例test_case.login.Http_test_test_2login_5结束执行,一共执行6.158000000144881e-06
+[2018-12-25 11:51:15,338] [INFO] 测试用例test_case.login.Http_test_test_2login_1开始执行
+[2018-12-25 11:51:15,637] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:51:15,637] [INFO] 你的请求方式是:post
+[2018-12-25 11:51:15,637] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-25 11:51:15,637] [INFO] 你的预期结果是:登录成功
+[2018-12-25 11:51:15,637] [INFO] 请求的实际结果是:登录成功
+[2018-12-25 11:51:15,637] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:51:15,897] [INFO] 测试用例test_case.login.Http_test_test_2login_1结束执行,一共执行1.0263000000065858e-05
+[2018-12-25 11:51:15,907] [INFO] 测试用例test_case.login.Http_test_test_2login_2开始执行
+[2018-12-25 11:51:16,087] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:51:16,087] [INFO] 你的请求方式是:post
+[2018-12-25 11:51:16,087] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890'}
+[2018-12-25 11:51:16,087] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-25 11:51:16,087] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-25 11:51:16,087] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:51:16,327] [INFO] 测试用例test_case.login.Http_test_test_2login_2结束执行,一共执行8.894000000037039e-06
+[2018-12-25 11:51:16,337] [INFO] 测试用例test_case.login.Http_test_test_2login_3开始执行
+[2018-12-25 11:51:16,527] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:51:16,527] [INFO] 你的请求方式是:post
+[2018-12-25 11:51:16,527] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': ''}
+[2018-12-25 11:51:16,527] [INFO] 你的预期结果是:密码不能为空
+[2018-12-25 11:51:16,527] [INFO] 请求的实际结果是:密码不能为空
+[2018-12-25 11:51:16,527] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:51:16,777] [INFO] 测试用例test_case.login.Http_test_test_2login_3结束执行,一共执行6.158000000144881e-06
+[2018-12-25 11:51:16,777] [INFO] 测试用例test_case.login.Http_test_test_2login_4开始执行
+[2018-12-25 11:51:18,719] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:51:18,719] [INFO] 你的请求方式是:post
+[2018-12-25 11:51:18,719] [INFO] 你的请求参数是:{'mobilephone': '18999999658', 'pwd': '123456789'}
+[2018-12-25 11:51:18,719] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-25 11:51:18,719] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-25 11:51:18,719] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:51:18,965] [INFO] 测试用例test_case.login.Http_test_test_2login_4结束执行,一共执行6.158000000144881e-06
+[2018-12-25 11:51:18,965] [INFO] 测试用例test_case.login.Http_test_test_2login_5开始执行
+[2018-12-25 11:51:19,135] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 11:51:19,135] [INFO] 你的请求方式是:post
+[2018-12-25 11:51:19,135] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '123456789'}
+[2018-12-25 11:51:19,135] [INFO] 你的预期结果是:用户名或密码错误
+[2018-12-25 11:51:19,135] [INFO] 请求的实际结果是:用户名或密码错误
+[2018-12-25 11:51:19,135] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 11:51:19,397] [INFO] 测试用例test_case.login.Http_test_test_2login_5结束执行,一共执行6.157999999700792e-06

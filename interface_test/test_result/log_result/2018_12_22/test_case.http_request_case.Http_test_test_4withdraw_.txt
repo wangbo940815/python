@@ -1,0 +1,2269 @@
+[2018-12-22 16:03:08,561] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:03:08,561] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:08,562] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:08,562] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"0.01"}
+[2018-12-22 16:03:08,562] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:03:08,562] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:08,567] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:03:09,045] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:09,045] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:09,046] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:03:09,046] [INFO] 你的预期结果是:参数错误：参数不能为空
+[2018-12-22 16:03:09,046] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:09,047] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:09,108] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:03:09,552] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:09,553] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:09,553] [INFO] 你的请求参数是:{'mobilephone': '18999999551', 'amount': 50.1}
+[2018-12-22 16:03:09,554] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:03:09,554] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:09,555] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:09,622] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:03:10,006] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,006] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,007] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:03:10,007] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:03:10,008] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:10,008] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:10,087] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:03:10,438] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,440] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,440] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:03:10,441] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:03:10,441] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:10,441] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:10,510] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:03:10,782] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,783] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,783] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:03:10,784] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:03:10,784] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:10,784] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:10,847] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:03:10,847] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,847] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,847] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":""}
+[2018-12-22 16:03:10,848] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:03:10,848] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:10,851] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:03:10,851] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,852] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,852] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":50.123}
+[2018-12-22 16:03:10,852] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:03:10,852] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:10,858] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:03:10,858] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,859] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,859] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":500000.01}
+[2018-12-22 16:03:10,859] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:03:10,859] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:10,862] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:03:10,863] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,863] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,863] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":-0.01}
+[2018-12-22 16:03:10,863] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:03:10,864] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:10,868] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:03:10,868] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,869] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,869] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"a.01"}
+[2018-12-22 16:03:10,869] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:03:10,869] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:10,875] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:03:10,876] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:10,876] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:10,876] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"500000"}
+[2018-12-22 16:03:10,876] [INFO] 你的预期结果是:余额不足：请修改提现额度
+[2018-12-22 16:03:10,876] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:32,062] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:03:32,062] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:32,062] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:32,063] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"0.01"}
+[2018-12-22 16:03:32,063] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:03:32,063] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:32,068] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:03:32,445] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:32,446] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:32,446] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:03:32,447] [INFO] 你的预期结果是:参数错误：参数不能为空
+[2018-12-22 16:03:32,447] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:32,447] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:32,689] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.156999999618051e-06
+[2018-12-22 16:03:32,693] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:03:33,130] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:33,131] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:33,131] [INFO] 你的请求参数是:{'mobilephone': '18999999553', 'amount': 50.1}
+[2018-12-22 16:03:33,132] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:03:33,132] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:33,132] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:33,360] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.156999999618051e-06
+[2018-12-22 16:03:33,365] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:03:33,796] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:33,797] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:33,798] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:03:33,798] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:03:33,799] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:33,799] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:34,038] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行5.473999999949797e-06
+[2018-12-22 16:03:34,043] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:03:34,350] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:34,350] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:34,351] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:03:34,351] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:03:34,352] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:34,352] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:34,587] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:03:34,591] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:03:35,004] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:35,005] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:35,006] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:03:35,006] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:03:35,006] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:03:35,007] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:03:35,244] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.157999999700792e-06
+[2018-12-22 16:03:35,248] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:03:35,249] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:35,249] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:35,249] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":""}
+[2018-12-22 16:03:35,250] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:03:35,250] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:35,253] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:03:35,254] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:35,254] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:35,255] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":50.123}
+[2018-12-22 16:03:35,255] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:03:35,255] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:35,259] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:03:35,259] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:35,260] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:35,261] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":500000.01}
+[2018-12-22 16:03:35,261] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:03:35,261] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:35,265] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:03:35,266] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:35,266] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:35,266] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":-0.01}
+[2018-12-22 16:03:35,266] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:03:35,267] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:35,270] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:03:35,271] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:35,272] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:35,273] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"a.01"}
+[2018-12-22 16:03:35,273] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:03:35,274] [INFO] 请求的实际结果是:None
+[2018-12-22 16:03:35,278] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:03:35,279] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:03:35,279] [INFO] 你的请求方式是:post
+[2018-12-22 16:03:35,279] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"500000"}
+[2018-12-22 16:03:35,280] [INFO] 你的预期结果是:余额不足：请修改提现额度
+[2018-12-22 16:03:35,280] [INFO] 请求的实际结果是:None
+[2018-12-22 16:05:36,780] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:05:36,781] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:36,781] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:36,781] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"0.01"}
+[2018-12-22 16:05:36,782] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:05:36,782] [INFO] 请求的实际结果是:None
+[2018-12-22 16:05:36,786] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:05:37,161] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:37,162] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:37,162] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:05:37,163] [INFO] 你的预期结果是:参数错误：参数不能为空
+[2018-12-22 16:05:37,163] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:05:37,164] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:05:37,400] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.841999999451787e-06
+[2018-12-22 16:05:37,404] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:05:37,784] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:37,784] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:37,784] [INFO] 你的请求参数是:{'mobilephone': '18999999555', 'amount': 50.1}
+[2018-12-22 16:05:37,784] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:05:37,784] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:05:37,784] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:05:38,008] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.157999999700792e-06
+[2018-12-22 16:05:38,013] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:05:38,309] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:38,309] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:38,310] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:05:38,310] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:05:38,311] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:05:38,311] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:05:38,554] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行5.473999999949797e-06
+[2018-12-22 16:05:38,558] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:05:38,919] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:38,919] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:38,920] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:05:38,920] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:05:38,920] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:05:38,921] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:05:39,151] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157999999700792e-06
+[2018-12-22 16:05:39,151] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:05:39,516] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:39,516] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:39,516] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:05:39,516] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:05:39,516] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:05:39,516] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:05:39,755] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.157999999700792e-06
+[2018-12-22 16:05:39,755] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:05:39,755] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:39,755] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:39,755] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":""}
+[2018-12-22 16:05:39,755] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:05:39,755] [INFO] 请求的实际结果是:None
+[2018-12-22 16:05:39,765] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:05:39,765] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:39,765] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:39,765] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":50.123}
+[2018-12-22 16:05:39,765] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:05:39,765] [INFO] 请求的实际结果是:None
+[2018-12-22 16:05:39,765] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:05:39,765] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:39,765] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:39,765] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":500000.01}
+[2018-12-22 16:05:39,765] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:05:39,765] [INFO] 请求的实际结果是:None
+[2018-12-22 16:05:39,776] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:05:39,776] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:39,776] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:39,776] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":-0.01}
+[2018-12-22 16:05:39,776] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:05:39,776] [INFO] 请求的实际结果是:None
+[2018-12-22 16:05:39,776] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:05:39,776] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:39,776] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:39,776] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"a.01"}
+[2018-12-22 16:05:39,776] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:05:39,776] [INFO] 请求的实际结果是:None
+[2018-12-22 16:05:39,786] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:05:39,786] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:05:39,786] [INFO] 你的请求方式是:post
+[2018-12-22 16:05:39,786] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"500000"}
+[2018-12-22 16:05:39,786] [INFO] 你的预期结果是:余额不足：请修改提现额度
+[2018-12-22 16:05:39,786] [INFO] 请求的实际结果是:None
+[2018-12-22 16:06:26,557] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:06:26,894] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:26,895] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:26,895] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': '0.01'}
+[2018-12-22 16:06:26,896] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:06:26,896] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:06:26,896] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:06:27,130] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:06:27,133] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:06:27,303] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:27,303] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:27,303] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:06:27,304] [INFO] 你的预期结果是:参数错误：参数不能为空
+[2018-12-22 16:06:27,304] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:06:27,304] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:27,536] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:06:27,541] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:06:27,806] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:27,806] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:27,806] [INFO] 你的请求参数是:{'mobilephone': '18999999557', 'amount': 50.1}
+[2018-12-22 16:06:27,807] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:06:27,807] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:06:27,807] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:06:28,037] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行5.47399999817344e-06
+[2018-12-22 16:06:28,040] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:06:28,300] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:28,301] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:28,301] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:06:28,302] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:06:28,302] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:06:28,302] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:28,547] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:06:28,550] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:06:28,717] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:28,717] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:28,718] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:06:28,718] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:06:28,719] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:06:28,719] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:28,960] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:06:28,964] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:06:29,293] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:29,293] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:29,293] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:06:29,293] [INFO] 你的预期结果是:手机号格式不正确
+[2018-12-22 16:06:29,293] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:06:29,293] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:29,535] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:06:29,539] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:06:29,841] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:29,842] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:29,842] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': ''}
+[2018-12-22 16:06:29,843] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:06:29,844] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:06:29,844] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:06:30,086] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:06:30,090] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:06:30,375] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:30,375] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:30,376] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': 50.123}
+[2018-12-22 16:06:30,376] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:06:30,376] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:06:30,377] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:30,609] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.841000001145403e-06
+[2018-12-22 16:06:30,613] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:06:31,049] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:31,049] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:31,049] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': 500000.01}
+[2018-12-22 16:06:31,049] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:06:31,049] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:06:31,049] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:31,309] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:06:31,309] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:06:31,714] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:31,715] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:31,715] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': -0.01}
+[2018-12-22 16:06:31,716] [INFO] 你的预期结果是:请输入范围在0到50万之间的整数金额
+[2018-12-22 16:06:31,716] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:06:31,717] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:31,953] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:06:31,957] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:06:32,257] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:32,257] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:32,257] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': 'a.01'}
+[2018-12-22 16:06:32,257] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:06:32,257] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:06:32,257] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:06:32,499] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:06:32,499] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:06:32,804] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:06:32,804] [INFO] 你的请求方式是:post
+[2018-12-22 16:06:32,804] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': '500000'}
+[2018-12-22 16:06:32,804] [INFO] 你的预期结果是:余额不足：请修改提现额度
+[2018-12-22 16:06:32,804] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:06:32,804] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:06:33,061] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:09:01,976] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:09:02,404] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:02,404] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:02,404] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': '0.01'}
+[2018-12-22 16:09:02,404] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:09:02,404] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:09:02,404] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:02,476] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:09:02,698] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:02,698] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:02,698] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:09:02,698] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:09:02,698] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:09:02,698] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:02,758] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:09:03,291] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:03,291] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:03,292] [INFO] 你的请求参数是:{'mobilephone': '18999999557', 'amount': 50.1}
+[2018-12-22 16:09:03,292] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:09:03,293] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:09:03,293] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:03,367] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:09:03,516] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:03,517] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:03,517] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:09:03,517] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:09:03,517] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:09:03,518] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:03,580] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:09:03,815] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:03,816] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:03,816] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:09:03,817] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:09:03,817] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:09:03,818] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:03,883] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:09:04,095] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:04,096] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:04,096] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:09:04,097] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:09:04,097] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:09:04,097] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:04,162] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:09:04,490] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:04,491] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:04,492] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': ''}
+[2018-12-22 16:09:04,492] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:09:04,492] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:09:04,493] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:04,550] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:09:04,902] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:04,902] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:04,902] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': 50.123}
+[2018-12-22 16:09:04,912] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:09:04,912] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:09:04,912] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:09:04,983] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:09:05,292] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:05,293] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:05,293] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': 500000.01}
+[2018-12-22 16:09:05,293] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:05,294] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:05,295] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:05,356] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:09:05,674] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:05,675] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:05,675] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': -0.01}
+[2018-12-22 16:09:05,676] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:05,676] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:05,676] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:05,742] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:09:06,053] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:06,053] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:06,054] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': 'a.01'}
+[2018-12-22 16:09:06,054] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:09:06,054] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:09:06,054] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:06,117] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:09:06,407] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:06,407] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:06,407] [INFO] 你的请求参数是:{'mobilephone': '18999999556', 'amount': '500000'}
+[2018-12-22 16:09:06,407] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:09:06,407] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:09:06,407] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:28,897] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:09:29,437] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:29,438] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:29,438] [INFO] 你的请求参数是:{'mobilephone': '18999999558', 'amount': '0.01'}
+[2018-12-22 16:09:29,438] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:09:29,439] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:09:29,439] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:29,672] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:09:29,678] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:09:29,920] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:29,921] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:29,921] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:09:29,921] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:09:29,922] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:09:29,922] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:30,161] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:09:30,163] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:09:30,523] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:30,523] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:30,524] [INFO] 你的请求参数是:{'mobilephone': '18999999559', 'amount': 50.1}
+[2018-12-22 16:09:30,524] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:09:30,524] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:09:30,525] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:30,762] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:09:30,765] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:09:31,007] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:31,007] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:31,007] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:09:31,007] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:09:31,008] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:09:31,008] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:31,237] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:09:31,240] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:09:31,546] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:31,547] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:31,547] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:09:31,548] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:09:31,548] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:09:31,549] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:31,800] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:09:31,803] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:09:32,005] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:32,005] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:32,006] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:09:32,006] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:09:32,006] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:09:32,007] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:32,260] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:09:32,264] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:09:32,544] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:32,545] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:32,545] [INFO] 你的请求参数是:{'mobilephone': '18999999558', 'amount': ''}
+[2018-12-22 16:09:32,546] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:09:32,546] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:09:32,547] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:32,790] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:09:32,793] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:09:33,176] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:33,176] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:33,177] [INFO] 你的请求参数是:{'mobilephone': '18999999558', 'amount': 50.123}
+[2018-12-22 16:09:33,177] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:09:33,178] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:09:33,178] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:09:33,423] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:09:33,429] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:09:33,800] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:33,800] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:33,800] [INFO] 你的请求参数是:{'mobilephone': '18999999558', 'amount': 500000.01}
+[2018-12-22 16:09:33,800] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:33,800] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:33,800] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:34,043] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:09:34,053] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:09:34,390] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:34,390] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:34,391] [INFO] 你的请求参数是:{'mobilephone': '18999999558', 'amount': -0.01}
+[2018-12-22 16:09:34,391] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:34,392] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:09:34,392] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:34,665] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:09:34,672] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:09:34,992] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:34,993] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:34,993] [INFO] 你的请求参数是:{'mobilephone': '18999999558', 'amount': 'a.01'}
+[2018-12-22 16:09:34,994] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:09:34,995] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:09:34,995] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:35,233] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:09:35,237] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:09:35,597] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:09:35,598] [INFO] 你的请求方式是:post
+[2018-12-22 16:09:35,598] [INFO] 你的请求参数是:{'mobilephone': '18999999558', 'amount': '500000'}
+[2018-12-22 16:09:35,599] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:09:35,599] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:09:35,600] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:09:35,865] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:10:25,836] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:10:26,181] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:26,182] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:26,182] [INFO] 你的请求参数是:{'mobilephone': '18999999560', 'amount': '0.01'}
+[2018-12-22 16:10:26,183] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:10:26,183] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:10:26,184] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:26,439] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:10:26,443] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:10:26,789] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:26,789] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:26,789] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:10:26,789] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:10:26,789] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:10:26,789] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:27,029] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:10:27,034] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:10:27,343] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:27,344] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:27,344] [INFO] 你的请求参数是:{'mobilephone': '18999999561', 'amount': 50.1}
+[2018-12-22 16:10:27,345] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:10:27,345] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:10:27,345] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:27,586] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:10:27,589] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:10:27,854] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:27,855] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:27,855] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:10:27,855] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:10:27,856] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:10:27,856] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:28,085] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:10:28,088] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:10:28,482] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:28,482] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:28,482] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:10:28,482] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:10:28,482] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:10:28,482] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:28,723] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:10:28,733] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:10:29,000] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:29,000] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:29,001] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:10:29,002] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:10:29,002] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:10:29,003] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:29,248] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.841000001145403e-06
+[2018-12-22 16:10:29,253] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:10:29,878] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:29,879] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:29,880] [INFO] 你的请求参数是:{'mobilephone': '18999999560', 'amount': ''}
+[2018-12-22 16:10:29,880] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:10:29,880] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:10:29,881] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:30,126] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:10:30,131] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:10:30,653] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:30,653] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:30,653] [INFO] 你的请求参数是:{'mobilephone': '18999999560', 'amount': 50.123}
+[2018-12-22 16:10:30,653] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:10:30,653] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:10:30,653] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:10:30,895] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:10:30,905] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:10:31,324] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:31,324] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:31,325] [INFO] 你的请求参数是:{'mobilephone': '18999999560', 'amount': 500000.01}
+[2018-12-22 16:10:31,325] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:10:31,325] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:10:31,326] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:31,566] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:10:31,569] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:10:31,937] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:31,937] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:31,937] [INFO] 你的请求参数是:{'mobilephone': '18999999560', 'amount': -0.01}
+[2018-12-22 16:10:31,937] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:10:31,937] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:10:31,937] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:32,204] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行7.525999997426425e-06
+[2018-12-22 16:10:32,204] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:10:32,467] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:32,467] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:32,467] [INFO] 你的请求参数是:{'mobilephone': '18999999560', 'amount': 'a.01'}
+[2018-12-22 16:10:32,467] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:10:32,467] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:10:32,467] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:32,712] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行8.210000000730133e-06
+[2018-12-22 16:10:32,712] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:10:32,998] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:10:32,998] [INFO] 你的请求方式是:post
+[2018-12-22 16:10:32,999] [INFO] 你的请求参数是:{'mobilephone': '18999999560', 'amount': '500000'}
+[2018-12-22 16:10:32,999] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:10:33,000] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:10:33,000] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:10:33,231] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:12:02,434] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:12:02,736] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:02,737] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:02,737] [INFO] 你的请求参数是:{'mobilephone': '18999999562', 'amount': '0.01'}
+[2018-12-22 16:12:02,738] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:12:02,738] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:12:02,739] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:02,976] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:12:02,978] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:12:03,296] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:03,296] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:03,296] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:12:03,296] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:12:03,296] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:12:03,296] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:03,540] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:12:03,540] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:12:04,012] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:04,012] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:04,012] [INFO] 你的请求参数是:{'mobilephone': '18999999563', 'amount': 50.1}
+[2018-12-22 16:12:04,012] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:12:04,012] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:12:04,012] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:04,272] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:12:04,274] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:12:04,494] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:04,495] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:04,495] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:12:04,495] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:12:04,496] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:12:04,496] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:04,736] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:12:04,739] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:12:04,949] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:04,950] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:04,950] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:12:04,951] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:12:04,951] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:12:04,951] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:05,188] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:12:05,191] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:12:05,419] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:05,420] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:05,420] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:12:05,421] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:12:05,421] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:12:05,422] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:05,671] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:12:05,673] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:12:05,980] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:05,980] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:05,981] [INFO] 你的请求参数是:{'mobilephone': '18999999562', 'amount': ''}
+[2018-12-22 16:12:05,981] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:12:05,982] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:12:05,982] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:06,231] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:12:06,234] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:12:06,605] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:06,605] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:06,606] [INFO] 你的请求参数是:{'mobilephone': '18999999562', 'amount': 50.123}
+[2018-12-22 16:12:06,606] [INFO] 你的预期结果是:请输入金额的金额小数不能超过两位
+[2018-12-22 16:12:06,607] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:12:06,607] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:12:06,844] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:12:06,849] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:12:07,182] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:07,183] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:07,184] [INFO] 你的请求参数是:{'mobilephone': '18999999562', 'amount': 500000.01}
+[2018-12-22 16:12:07,184] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:12:07,184] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:12:07,185] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:07,430] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:12:07,434] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:12:09,503] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:09,504] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:09,504] [INFO] 你的请求参数是:{'mobilephone': '18999999562', 'amount': -0.01}
+[2018-12-22 16:12:09,505] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:12:09,505] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:12:09,506] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:09,754] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:12:09,758] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:12:12,559] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:12,559] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:12,559] [INFO] 你的请求参数是:{'mobilephone': '18999999562', 'amount': 'a.01'}
+[2018-12-22 16:12:12,559] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:12:12,559] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:12:12,559] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:12,817] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.156999994288981e-06
+[2018-12-22 16:12:12,822] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:12:13,105] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:12:13,105] [INFO] 你的请求方式是:post
+[2018-12-22 16:12:13,106] [INFO] 你的请求参数是:{'mobilephone': '18999999562', 'amount': '500000'}
+[2018-12-22 16:12:13,106] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:12:13,107] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:12:13,107] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:12:13,346] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:13:08,859] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:13:09,190] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:09,191] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:09,191] [INFO] 你的请求参数是:{'mobilephone': '18999999564', 'amount': '0.01'}
+[2018-12-22 16:13:09,192] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:13:09,192] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:13:09,192] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:09,432] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:13:09,437] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:13:09,618] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:09,618] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:09,618] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:13:09,618] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:13:09,618] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:13:09,618] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:09,866] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行8.210000000730133e-06
+[2018-12-22 16:13:09,876] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:13:10,254] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:10,255] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:10,255] [INFO] 你的请求参数是:{'mobilephone': '18999999565', 'amount': 50.1}
+[2018-12-22 16:13:10,256] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:13:10,256] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:13:10,256] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:10,494] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:13:10,498] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:13:10,691] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:10,691] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:10,692] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:13:10,692] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:13:10,693] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:13:10,693] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:10,941] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:13:10,945] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:13:11,179] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:11,179] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:11,179] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:13:11,179] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:13:11,179] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:13:11,179] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:11,423] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:13:11,423] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:13:11,636] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:11,637] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:11,637] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:13:11,637] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:13:11,637] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:13:11,638] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:11,863] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:13:11,866] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:13:12,262] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:12,262] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:12,262] [INFO] 你的请求参数是:{'mobilephone': '18999999564', 'amount': ''}
+[2018-12-22 16:13:12,262] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:13:12,262] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:13:12,262] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:12,525] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:13:12,525] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:13:12,877] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:12,878] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:12,878] [INFO] 你的请求参数是:{'mobilephone': '18999999564', 'amount': 50.123}
+[2018-12-22 16:13:12,879] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:13:12,879] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:13:12,880] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:13,142] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:13:13,146] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:13:13,486] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:13,487] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:13,487] [INFO] 你的请求参数是:{'mobilephone': '18999999564', 'amount': 500000.01}
+[2018-12-22 16:13:13,488] [INFO] 你的预期结果是:输入范围在0到50万之间的正数金额
+[2018-12-22 16:13:13,488] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:13:13,489] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:13:13,731] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:13:13,735] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:13:14,112] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:14,112] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:14,122] [INFO] 你的请求参数是:{'mobilephone': '18999999564', 'amount': -0.01}
+[2018-12-22 16:13:14,122] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:13:14,122] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:13:14,122] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:14,402] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:13:14,402] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:13:14,713] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:14,714] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:14,714] [INFO] 你的请求参数是:{'mobilephone': '18999999564', 'amount': 'a.01'}
+[2018-12-22 16:13:14,715] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:13:14,715] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:13:14,716] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:14,967] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:13:14,970] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:13:15,272] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:13:15,272] [INFO] 你的请求方式是:post
+[2018-12-22 16:13:15,273] [INFO] 你的请求参数是:{'mobilephone': '18999999564', 'amount': '500000'}
+[2018-12-22 16:13:15,273] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:13:15,274] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:13:15,274] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:13:15,516] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:15:06,579] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:15:06,901] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:06,901] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:06,902] [INFO] 你的请求参数是:{'mobilephone': '18999999566', 'amount': '0.01'}
+[2018-12-22 16:15:06,902] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:15:06,903] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:15:06,903] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:07,147] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:15:07,151] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:15:07,481] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:07,482] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:07,482] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:15:07,483] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:15:07,483] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:15:07,483] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:07,721] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行1.2315999999401583e-05
+[2018-12-22 16:15:07,724] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:15:08,134] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:08,135] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:08,135] [INFO] 你的请求参数是:{'mobilephone': '18999999567', 'amount': 50.1}
+[2018-12-22 16:15:08,136] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:15:08,136] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:15:08,137] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:08,379] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:15:08,382] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:15:08,615] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:08,616] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:08,616] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:15:08,617] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:15:08,617] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:15:08,618] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:08,857] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:15:08,860] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:15:09,092] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:09,093] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:09,094] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:15:09,094] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:15:09,095] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:15:09,095] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:09,335] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:15:09,339] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:15:09,603] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:09,603] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:09,604] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:15:09,604] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:15:09,605] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:15:09,605] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:09,841] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:15:09,844] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:15:10,257] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:10,258] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:10,259] [INFO] 你的请求参数是:{'mobilephone': '18999999566', 'amount': ''}
+[2018-12-22 16:15:10,259] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:15:10,259] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:15:10,260] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:10,499] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:15:10,502] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:15:10,917] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:10,917] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:10,918] [INFO] 你的请求参数是:{'mobilephone': '18999999566', 'amount': 50.123}
+[2018-12-22 16:15:10,918] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:15:10,919] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:15:10,919] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:11,155] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:15:11,158] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:15:11,816] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:11,817] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:11,818] [INFO] 你的请求参数是:{'mobilephone': '18999999566', 'amount': 500000.01}
+[2018-12-22 16:15:11,818] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:15:11,818] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:15:11,819] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:12,060] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:15:12,063] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:15:12,441] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:12,442] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:12,442] [INFO] 你的请求参数是:{'mobilephone': '18999999566', 'amount': -0.01}
+[2018-12-22 16:15:12,443] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:15:12,443] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:15:12,443] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:12,674] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:15:12,678] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:15:13,030] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:13,030] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:13,031] [INFO] 你的请求参数是:{'mobilephone': '18999999566', 'amount': 'a.01'}
+[2018-12-22 16:15:13,031] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:15:13,032] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:15:13,032] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:13,265] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:15:13,269] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:15:13,599] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:15:13,600] [INFO] 你的请求方式是:post
+[2018-12-22 16:15:13,600] [INFO] 你的请求参数是:{'mobilephone': '18999999566', 'amount': '500000'}
+[2018-12-22 16:15:13,601] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:15:13,601] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:15:13,602] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:15:13,848] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.841000001145403e-06
+[2018-12-22 16:16:27,285] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:16:27,687] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:27,687] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:27,687] [INFO] 你的请求参数是:{'mobilephone': '18999999568', 'amount': '0.01'}
+[2018-12-22 16:16:27,687] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:16:27,687] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:16:27,687] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:27,936] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:16:27,936] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:16:28,197] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:28,197] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:28,198] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:16:28,198] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:16:28,198] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:16:28,199] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:28,423] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:16:28,423] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:16:28,780] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:28,781] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:28,781] [INFO] 你的请求参数是:{'mobilephone': '18999999569', 'amount': 50.1}
+[2018-12-22 16:16:28,782] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:16:28,782] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:16:28,782] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:29,034] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:16:29,037] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:16:29,299] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:29,299] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:29,300] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:16:29,300] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:16:29,300] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:16:29,301] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:29,540] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:16:29,545] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:16:29,845] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:29,845] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:29,846] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:16:29,846] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:16:29,847] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:16:29,847] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:30,093] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:16:30,097] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:16:30,323] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:30,324] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:30,324] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:16:30,325] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:16:30,325] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:16:30,325] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:30,565] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:16:30,569] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:16:30,919] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:30,919] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:30,920] [INFO] 你的请求参数是:{'mobilephone': '18999999568', 'amount': ''}
+[2018-12-22 16:16:30,920] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:16:30,920] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:16:30,921] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:31,164] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:16:31,168] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:16:31,556] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:31,557] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:31,557] [INFO] 你的请求参数是:{'mobilephone': '18999999568', 'amount': 50.123}
+[2018-12-22 16:16:31,558] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:16:31,558] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:16:31,558] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:31,796] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:16:31,800] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:16:32,136] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:32,137] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:32,137] [INFO] 你的请求参数是:{'mobilephone': '18999999568', 'amount': 500000.01}
+[2018-12-22 16:16:32,137] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:16:32,138] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:16:32,138] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:32,369] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:16:32,373] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:16:32,748] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:32,749] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:32,749] [INFO] 你的请求参数是:{'mobilephone': '18999999568', 'amount': -0.01}
+[2018-12-22 16:16:32,749] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:16:32,750] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:16:32,750] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:32,995] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:16:32,999] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:16:33,408] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:33,409] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:33,409] [INFO] 你的请求参数是:{'mobilephone': '18999999568', 'amount': 'a.01'}
+[2018-12-22 16:16:33,409] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:16:33,410] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:16:33,410] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:33,651] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:16:33,651] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:16:33,980] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:16:33,981] [INFO] 你的请求方式是:post
+[2018-12-22 16:16:33,981] [INFO] 你的请求参数是:{'mobilephone': '18999999568', 'amount': '500000'}
+[2018-12-22 16:16:33,981] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:16:33,982] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:16:33,982] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:16:34,236] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行5.473000001643413e-06
+[2018-12-22 16:20:15,256] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:20:15,366] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,366] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,366] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"0.01"}
+[2018-12-22 16:20:15,367] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:20:15,368] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:20:15,372] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:20:15,373] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,373] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,373] [INFO] 你的请求参数是:{"mobilephone":"","amount":50.01}
+[2018-12-22 16:20:15,373] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:20:15,374] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:20:15,378] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:20:15,379] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,379] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,380] [INFO] 你的请求参数是:{"mobilephone":"${register_phoneIsRight}","amount":50.1}
+[2018-12-22 16:20:15,380] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:20:15,380] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:20:15,384] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:20:15,385] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,385] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,385] [INFO] 你的请求参数是:{"mobilephone":"135508483891","amount":50.1}
+[2018-12-22 16:20:15,385] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:20:15,385] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:20:15,389] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:20:15,390] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,390] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,390] [INFO] 你的请求参数是:{"mobilephone":"1355084831","amount":50.1}
+[2018-12-22 16:20:15,391] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:20:15,391] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:20:15,396] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:20:15,396] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,396] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,396] [INFO] 你的请求参数是:{"mobilephone":"1355084831s","amount":50.1}
+[2018-12-22 16:20:15,397] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:20:15,397] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:20:15,401] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:20:15,504] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,504] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,504] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":""}
+[2018-12-22 16:20:15,504] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:20:15,504] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:20:15,504] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:20:15,619] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,619] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,619] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":50.123}
+[2018-12-22 16:20:15,619] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:20:15,619] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:20:15,619] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:20:15,738] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,738] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,738] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":500000.01}
+[2018-12-22 16:20:15,738] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:15,739] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:15,743] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:20:15,851] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,851] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,851] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":-0.01}
+[2018-12-22 16:20:15,851] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:15,851] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:15,851] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:20:15,960] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:15,960] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:15,960] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"a.01"}
+[2018-12-22 16:20:15,960] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:20:15,960] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:20:15,960] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:20:16,081] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:16,081] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:16,081] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"500000"}
+[2018-12-22 16:20:16,082] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:20:16,082] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:20:26,318] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:20:26,425] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,425] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,425] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"0.01"}
+[2018-12-22 16:20:26,426] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:20:26,426] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:20:26,430] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:20:26,431] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,431] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,431] [INFO] 你的请求参数是:{"mobilephone":"","amount":50.01}
+[2018-12-22 16:20:26,431] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:20:26,432] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:20:26,435] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:20:26,435] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,435] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,436] [INFO] 你的请求参数是:{"mobilephone":"${register_phoneIsRight}","amount":50.1}
+[2018-12-22 16:20:26,436] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:20:26,436] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:20:26,439] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:20:26,440] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,440] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,440] [INFO] 你的请求参数是:{"mobilephone":"135508483891","amount":50.1}
+[2018-12-22 16:20:26,440] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:20:26,440] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:20:26,444] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:20:26,444] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,444] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,444] [INFO] 你的请求参数是:{"mobilephone":"1355084831","amount":50.1}
+[2018-12-22 16:20:26,445] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:20:26,445] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:20:26,450] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:20:26,451] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,451] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,451] [INFO] 你的请求参数是:{"mobilephone":"1355084831s","amount":50.1}
+[2018-12-22 16:20:26,451] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:20:26,452] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:20:26,459] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:20:26,569] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,569] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,570] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":""}
+[2018-12-22 16:20:26,570] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:20:26,570] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:20:26,574] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:20:26,673] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,673] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,673] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":50.123}
+[2018-12-22 16:20:26,673] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:20:26,673] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:20:26,673] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:20:26,799] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,799] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,800] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":500000.01}
+[2018-12-22 16:20:26,800] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:26,800] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:26,804] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:20:26,907] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:26,908] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:26,908] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":-0.01}
+[2018-12-22 16:20:26,908] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:26,908] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:20:26,912] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:20:27,022] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:27,022] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:27,022] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"a.01"}
+[2018-12-22 16:20:27,023] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:20:27,023] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:20:27,027] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:20:27,139] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:20:27,140] [INFO] 你的请求方式是:post
+[2018-12-22 16:20:27,141] [INFO] 你的请求参数是:{"mobilephone":"${mobilephone}","amount":"500000"}
+[2018-12-22 16:20:27,141] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:20:27,141] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:21:09,783] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:21:10,106] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:10,106] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:10,106] [INFO] 你的请求参数是:{'mobilephone': '18999999571', 'amount': '0.01'}
+[2018-12-22 16:21:10,106] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:21:10,106] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:21:10,106] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:10,365] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:21:10,369] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:21:10,556] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:10,556] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:10,557] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:21:10,557] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:21:10,558] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:21:10,558] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:10,803] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:21:10,806] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:21:11,166] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:11,166] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:11,167] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 50.1}
+[2018-12-22 16:21:11,167] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:21:11,168] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:21:11,168] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:11,417] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:21:11,421] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:21:11,673] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:11,673] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:11,674] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:21:11,674] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:21:11,674] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:21:11,675] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:11,912] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:21:11,916] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:21:12,106] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:12,107] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:12,108] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:21:12,108] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:21:12,109] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:21:12,109] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:12,347] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:21:12,352] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:21:12,554] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:12,555] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:12,555] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:21:12,556] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:21:12,556] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:21:12,556] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:12,793] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:21:12,796] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:21:13,098] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:13,098] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:13,100] [INFO] 你的请求参数是:{'mobilephone': '18999999571', 'amount': ''}
+[2018-12-22 16:21:13,100] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:21:13,101] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:21:13,101] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:13,347] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:21:13,352] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:21:13,686] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:13,686] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:13,687] [INFO] 你的请求参数是:{'mobilephone': '18999999571', 'amount': 50.123}
+[2018-12-22 16:21:13,687] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:21:13,687] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:21:13,688] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:13,923] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:21:13,926] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:21:14,472] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:14,473] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:14,473] [INFO] 你的请求参数是:{'mobilephone': '18999999571', 'amount': 500000.01}
+[2018-12-22 16:21:14,474] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:21:14,474] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:21:14,474] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:14,718] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:21:14,721] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:21:15,006] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:15,006] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:15,007] [INFO] 你的请求参数是:{'mobilephone': '18999999571', 'amount': -0.01}
+[2018-12-22 16:21:15,007] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:21:15,008] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:21:15,008] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:15,243] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:21:15,246] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:21:15,600] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:15,600] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:15,600] [INFO] 你的请求参数是:{'mobilephone': '18999999571', 'amount': 'a.01'}
+[2018-12-22 16:21:15,600] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:21:15,600] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:21:15,600] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:15,851] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:21:15,855] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:21:16,213] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:21:16,214] [INFO] 你的请求方式是:post
+[2018-12-22 16:21:16,214] [INFO] 你的请求参数是:{'mobilephone': '18999999571', 'amount': '500000'}
+[2018-12-22 16:21:16,215] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:21:16,215] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:21:16,216] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:21:16,466] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行2.120999999988271e-05
+[2018-12-22 16:29:36,246] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:29:36,597] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:36,597] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:36,597] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': '0.01'}
+[2018-12-22 16:29:36,598] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:29:36,598] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:36,598] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:36,830] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行5.47399999817344e-06
+[2018-12-22 16:29:36,835] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:29:37,104] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:37,105] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:37,105] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:29:37,106] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:29:37,107] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:37,107] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:37,346] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:29:37,350] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:29:37,698] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:37,698] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:37,698] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 50.1}
+[2018-12-22 16:29:37,698] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:29:37,698] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:37,698] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:37,948] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行5.4729999980907e-06
+[2018-12-22 16:29:37,964] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:29:38,264] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:38,265] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:38,265] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:29:38,266] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:29:38,266] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:38,266] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:38,568] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:29:38,573] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:29:38,885] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:38,885] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:38,886] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:29:38,886] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:29:38,887] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:38,887] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:39,161] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:29:39,166] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:29:39,435] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:39,435] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:39,435] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:29:39,436] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:29:39,436] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:39,436] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:39,700] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:29:39,700] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:29:40,131] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:40,132] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:40,132] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': ''}
+[2018-12-22 16:29:40,133] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:29:40,133] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:40,133] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:40,375] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:29:40,379] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:29:40,833] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:40,833] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:40,834] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 50.123}
+[2018-12-22 16:29:40,834] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:29:40,835] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:40,835] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:41,081] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:29:41,086] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:29:41,775] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:41,775] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:41,775] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 500000.01}
+[2018-12-22 16:29:41,775] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:29:41,776] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:41,776] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:42,047] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:29:42,052] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:29:42,483] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:42,483] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:42,483] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': -0.01}
+[2018-12-22 16:29:42,484] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:29:42,484] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:42,484] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:42,722] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:29:42,727] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:29:43,076] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:43,077] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:43,077] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 'a.01'}
+[2018-12-22 16:29:43,078] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:29:43,078] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:43,078] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:43,325] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:29:43,330] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:29:43,975] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:29:43,976] [INFO] 你的请求方式是:post
+[2018-12-22 16:29:43,976] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': '500000'}
+[2018-12-22 16:29:43,976] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:29:43,977] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:29:43,977] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:29:44,254] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:32:28,112] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:32:28,387] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:28,388] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:28,389] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': '0.01'}
+[2018-12-22 16:32:28,389] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:32:28,389] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:32:28,390] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:28,456] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:32:28,628] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:28,628] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:28,629] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:32:28,629] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:32:28,629] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:32:28,629] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:28,687] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:32:28,981] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:28,981] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:28,982] [INFO] 你的请求参数是:{'mobilephone': '18999999573', 'amount': 50.1}
+[2018-12-22 16:32:28,982] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:32:28,983] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:32:28,983] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:29,055] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:32:29,273] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:29,274] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:29,274] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:32:29,274] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:32:29,275] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:32:29,275] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:29,337] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:32:29,574] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:29,575] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:29,575] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:32:29,575] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:32:29,576] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:32:29,576] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:29,638] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:32:29,896] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:29,897] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:29,897] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:32:29,897] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:32:29,897] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:32:29,898] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:29,980] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:32:30,277] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:30,277] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:30,278] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': ''}
+[2018-12-22 16:32:30,278] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:32:30,278] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:32:30,279] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:30,340] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:32:30,570] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:30,570] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:30,571] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 50.123}
+[2018-12-22 16:32:30,571] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:32:30,571] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:32:30,571] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:30,625] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:32:30,894] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:30,895] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:30,895] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 500000.01}
+[2018-12-22 16:32:30,896] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:32:30,896] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:32:30,897] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:30,964] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:32:31,180] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:31,181] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:31,182] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': -0.01}
+[2018-12-22 16:32:31,182] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:32:31,183] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:32:31,183] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:31,249] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:32:31,581] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:31,582] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:31,582] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': 'a.01'}
+[2018-12-22 16:32:31,582] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:32:31,583] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:32:31,583] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:32:31,654] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:32:31,979] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:32:31,980] [INFO] 你的请求方式是:post
+[2018-12-22 16:32:31,980] [INFO] 你的请求参数是:{'mobilephone': '18999999572', 'amount': '500000'}
+[2018-12-22 16:32:31,981] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:32:31,981] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:32:31,982] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:34:59,263] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:34:59,528] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:34:59,529] [INFO] 你的请求方式是:post
+[2018-12-22 16:34:59,529] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': '0.01'}
+[2018-12-22 16:34:59,529] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:34:59,529] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:34:59,530] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:34:59,776] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:34:59,780] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:34:59,958] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:34:59,958] [INFO] 你的请求方式是:post
+[2018-12-22 16:34:59,958] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:34:59,958] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:34:59,959] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:34:59,959] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:00,215] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:35:00,218] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:35:00,680] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:00,680] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:00,681] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': 50.1}
+[2018-12-22 16:35:00,681] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:35:00,681] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:35:00,681] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:00,915] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:35:00,920] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:35:01,105] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:01,106] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:01,106] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:35:01,106] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:35:01,106] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:35:01,107] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:01,341] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:35:01,346] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:35:01,514] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:01,515] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:01,515] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:35:01,515] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:35:01,515] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:35:01,516] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:01,750] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:35:01,754] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:35:01,987] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:01,988] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:01,988] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:35:01,989] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:35:01,989] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:35:01,989] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:02,230] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行5.4729999980907e-06
+[2018-12-22 16:35:02,234] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:35:02,492] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:02,492] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:02,493] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': ''}
+[2018-12-22 16:35:02,493] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:35:02,493] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:35:02,494] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:02,772] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行8.20999999717742e-06
+[2018-12-22 16:35:02,776] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:35:03,060] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:03,060] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:03,061] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': 50.123}
+[2018-12-22 16:35:03,061] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:35:03,061] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:35:03,061] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:03,319] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:35:03,322] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:35:03,624] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:03,624] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:03,624] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': 500000.01}
+[2018-12-22 16:35:03,625] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:35:03,625] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:35:03,625] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:35:03,866] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:35:03,871] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:35:04,122] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:04,123] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:04,123] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': -0.01}
+[2018-12-22 16:35:04,123] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:35:04,123] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:35:04,124] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:35:04,362] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:35:04,366] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:35:04,603] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:04,604] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:04,604] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': 'a.01'}
+[2018-12-22 16:35:04,605] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:35:04,606] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:35:04,606] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:35:04,868] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:35:04,872] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:35:05,176] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:35:05,177] [INFO] 你的请求方式是:post
+[2018-12-22 16:35:05,177] [INFO] 你的请求参数是:{'mobilephone': '18999999575', 'amount': '500000'}
+[2018-12-22 16:35:05,178] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:35:05,178] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:35:05,178] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:35:05,426] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行5.47399999817344e-06
+[2018-12-22 16:41:42,148] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:41:42,480] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:42,481] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:42,481] [INFO] 你的请求参数是:{'mobilephone': '18999999576', 'amount': '0.01'}
+[2018-12-22 16:41:42,482] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:41:42,482] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:41:42,482] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:42,867] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:41:42,872] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:41:43,102] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:43,102] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:43,102] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:41:43,102] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:41:43,103] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:41:43,103] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:43,345] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:41:43,349] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:41:43,758] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:43,758] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:43,759] [INFO] 你的请求参数是:{'mobilephone': '18999999577', 'amount': 50.1}
+[2018-12-22 16:41:43,759] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:41:43,760] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:41:43,760] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:44,012] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行1.3000000002705292e-05
+[2018-12-22 16:41:44,016] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:41:44,313] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:44,313] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:44,314] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:41:44,314] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:41:44,314] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:41:44,315] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:44,563] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:41:44,566] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:41:44,802] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:44,802] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:44,802] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:41:44,803] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:41:44,803] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:41:44,803] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:45,053] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:41:45,059] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:41:45,251] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:45,252] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:45,252] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:41:45,252] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:41:45,253] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:41:45,253] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:45,495] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:41:45,500] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:41:45,768] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:45,769] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:45,769] [INFO] 你的请求参数是:{'mobilephone': '18999999577', 'amount': ''}
+[2018-12-22 16:41:45,769] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:41:45,769] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:41:45,769] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:46,017] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:41:46,020] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:41:46,280] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:46,281] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:46,281] [INFO] 你的请求参数是:{'mobilephone': '18999999577', 'amount': 50.123}
+[2018-12-22 16:41:46,281] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:41:46,282] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:41:46,282] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:46,516] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:41:46,519] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:41:46,774] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:46,775] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:46,776] [INFO] 你的请求参数是:{'mobilephone': '18999999577', 'amount': 500000.01}
+[2018-12-22 16:41:46,776] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:41:46,777] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:41:46,777] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:41:47,024] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:41:47,028] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:41:47,305] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:47,306] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:47,306] [INFO] 你的请求参数是:{'mobilephone': '18999999577', 'amount': -0.01}
+[2018-12-22 16:41:47,306] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:41:47,307] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:41:47,307] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:41:47,558] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:41:47,563] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:41:47,816] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:47,816] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:47,816] [INFO] 你的请求参数是:{'mobilephone': '18999999577', 'amount': 'a.01'}
+[2018-12-22 16:41:47,816] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:41:47,817] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:41:47,817] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:41:48,097] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.157700000031241e-05
+[2018-12-22 16:41:48,100] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:41:48,396] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:41:48,396] [INFO] 你的请求方式是:post
+[2018-12-22 16:41:48,397] [INFO] 你的请求参数是:{'mobilephone': '18999999577', 'amount': '500000'}
+[2018-12-22 16:41:48,397] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:41:48,397] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:41:48,398] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:41:48,648] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:43:27,061] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:43:27,301] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:27,302] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:27,302] [INFO] 你的请求参数是:{'mobilephone': '18999999578', 'amount': '0.01'}
+[2018-12-22 16:43:27,302] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:43:27,302] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:43:27,302] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:27,360] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:43:27,559] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:27,559] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:27,559] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:43:27,559] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:43:27,560] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:43:27,560] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:27,620] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:43:28,066] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:28,067] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:28,067] [INFO] 你的请求参数是:{'mobilephone': '18999999579', 'amount': 50.1}
+[2018-12-22 16:43:28,068] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:43:28,069] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:43:28,069] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:28,142] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:43:28,294] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:28,295] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:28,295] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:43:28,295] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:43:28,296] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:43:28,296] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:28,349] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:43:28,580] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:28,580] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:28,581] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:43:28,581] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:43:28,582] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:43:28,582] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:28,640] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:43:28,858] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:28,859] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:28,859] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:43:28,859] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:43:28,859] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:43:28,860] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:28,921] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:43:29,135] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:29,135] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:29,136] [INFO] 你的请求参数是:{'mobilephone': '18999999578', 'amount': ''}
+[2018-12-22 16:43:29,136] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:43:29,136] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:43:29,137] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:29,201] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:43:29,435] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:29,435] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:29,435] [INFO] 你的请求参数是:{'mobilephone': '18999999578', 'amount': 50.123}
+[2018-12-22 16:43:29,436] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:43:29,436] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:43:29,436] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:29,490] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:43:29,710] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:29,710] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:29,710] [INFO] 你的请求参数是:{'mobilephone': '18999999578', 'amount': 500000.01}
+[2018-12-22 16:43:29,710] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:43:29,710] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:43:29,711] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:29,766] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:43:30,053] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:30,053] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:30,054] [INFO] 你的请求参数是:{'mobilephone': '18999999578', 'amount': -0.01}
+[2018-12-22 16:43:30,054] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:43:30,054] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:43:30,054] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:30,109] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:43:30,389] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:30,390] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:30,390] [INFO] 你的请求参数是:{'mobilephone': '18999999578', 'amount': 'a.01'}
+[2018-12-22 16:43:30,390] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:43:30,391] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:43:30,391] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:43:30,454] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:43:30,703] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:43:30,703] [INFO] 你的请求方式是:post
+[2018-12-22 16:43:30,703] [INFO] 你的请求参数是:{'mobilephone': '18999999578', 'amount': '500000'}
+[2018-12-22 16:43:30,703] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:43:30,703] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:43:30,704] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:45:47,184] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:45:47,608] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:47,608] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:47,609] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': '0.01'}
+[2018-12-22 16:45:47,609] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:45:47,609] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:47,610] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:47,876] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:45:47,879] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:45:48,205] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:48,206] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:48,206] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:45:48,206] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:45:48,207] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:48,207] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:48,456] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:45:48,460] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:45:49,233] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:49,234] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:49,234] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': 50.1}
+[2018-12-22 16:45:49,234] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:45:49,235] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:49,235] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:49,491] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行7.525999997426425e-06
+[2018-12-22 16:45:49,496] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:45:49,888] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:49,889] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:49,889] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:45:49,890] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:45:49,890] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:49,891] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:50,139] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:45:50,143] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:45:50,522] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:50,522] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:50,522] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:45:50,522] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:45:50,523] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:50,523] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:50,782] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:45:50,785] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:45:51,174] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:51,175] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:51,175] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:45:51,175] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:45:51,176] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:51,176] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:51,426] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:45:51,430] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:45:51,824] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:51,825] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:51,825] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': ''}
+[2018-12-22 16:45:51,825] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:45:51,825] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:51,826] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:52,097] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:45:52,102] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:45:52,492] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:52,492] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:52,493] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': 50.123}
+[2018-12-22 16:45:52,493] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:45:52,493] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:52,493] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:52,739] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行7.525999997426425e-06
+[2018-12-22 16:45:52,743] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:45:53,206] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:53,207] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:53,207] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': 500000.01}
+[2018-12-22 16:45:53,207] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:45:53,208] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:53,208] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:53,455] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:45:53,459] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:45:54,212] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:54,212] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:54,212] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': -0.01}
+[2018-12-22 16:45:54,213] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:45:54,213] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:54,213] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:54,464] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:45:54,469] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:45:55,391] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:55,392] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:55,392] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': 'a.01'}
+[2018-12-22 16:45:55,392] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:45:55,393] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:55,393] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:55,673] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:45:55,678] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:45:56,046] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:45:56,046] [INFO] 你的请求方式是:post
+[2018-12-22 16:45:56,047] [INFO] 你的请求参数是:{'mobilephone': '18999999581', 'amount': '500000'}
+[2018-12-22 16:45:56,047] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:45:56,047] [INFO] 请求的实际结果是:抱歉，请先登录。
+[2018-12-22 16:45:56,047] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:45:56,357] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:46:51,542] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:46:51,814] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:51,814] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:51,814] [INFO] 你的请求参数是:{'mobilephone': '18999999582', 'amount': '0.01'}
+[2018-12-22 16:46:51,815] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:46:51,815] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:46:51,815] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:52,061] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:46:52,064] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:46:52,259] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:52,260] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:52,260] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:46:52,260] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:46:52,260] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:46:52,260] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:52,506] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行5.474000001726154e-06
+[2018-12-22 16:46:52,509] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:46:52,753] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:52,754] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:52,754] [INFO] 你的请求参数是:{'mobilephone': '${register_phoneIsNew}', 'amount': 50.1}
+[2018-12-22 16:46:52,755] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:46:52,755] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:46:52,755] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:46:53,017] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行5.47399999817344e-06
+[2018-12-22 16:46:53,023] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:46:53,205] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:53,206] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:53,206] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:46:53,206] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:46:53,207] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:46:53,207] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:53,454] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:46:53,457] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:46:53,943] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:53,943] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:53,943] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:46:53,944] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:46:53,944] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:46:53,944] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:54,204] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:46:54,207] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:46:54,374] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:54,375] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:54,375] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:46:54,375] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:46:54,375] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:46:54,376] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:54,627] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:46:54,630] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:46:54,871] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:54,871] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:54,872] [INFO] 你的请求参数是:{'mobilephone': '18999999582', 'amount': ''}
+[2018-12-22 16:46:54,872] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:46:54,872] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:46:54,872] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:55,112] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:46:55,116] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:46:55,502] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:55,503] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:55,503] [INFO] 你的请求参数是:{'mobilephone': '18999999582', 'amount': 50.123}
+[2018-12-22 16:46:55,503] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:46:55,504] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:46:55,504] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:55,739] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:46:55,743] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:46:56,069] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:56,070] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:56,070] [INFO] 你的请求参数是:{'mobilephone': '18999999582', 'amount': 500000.01}
+[2018-12-22 16:46:56,071] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:46:56,071] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:46:56,071] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:56,317] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:46:56,321] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:46:56,583] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:56,584] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:56,584] [INFO] 你的请求参数是:{'mobilephone': '18999999582', 'amount': -0.01}
+[2018-12-22 16:46:56,585] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:46:56,585] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:46:56,586] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:56,862] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行5.47399999817344e-06
+[2018-12-22 16:46:56,865] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:46:57,123] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:57,124] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:57,124] [INFO] 你的请求参数是:{'mobilephone': '18999999582', 'amount': 'a.01'}
+[2018-12-22 16:46:57,124] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:46:57,124] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:46:57,125] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:57,379] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:46:57,381] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:46:57,642] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:46:57,642] [INFO] 你的请求方式是:post
+[2018-12-22 16:46:57,642] [INFO] 你的请求参数是:{'mobilephone': '18999999582', 'amount': '500000'}
+[2018-12-22 16:46:57,642] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:46:57,643] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:46:57,643] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:46:57,912] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:48:39,011] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:48:39,298] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:39,298] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:39,299] [INFO] 你的请求参数是:{'mobilephone': '18999999584', 'amount': '0.01'}
+[2018-12-22 16:48:39,299] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:48:39,299] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:48:39,299] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:39,528] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.156999999618051e-06
+[2018-12-22 16:48:39,532] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:48:39,783] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:39,783] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:39,783] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:48:39,784] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:48:39,784] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:48:39,784] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:40,058] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157999999700792e-06
+[2018-12-22 16:48:40,062] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:48:40,263] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:40,264] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:40,264] [INFO] 你的请求参数是:{'mobilephone': '${register_phoneIsNew}', 'amount': 50.1}
+[2018-12-22 16:48:40,265] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:48:40,265] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:48:40,266] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:48:40,544] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:48:40,551] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:48:40,709] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:40,709] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:40,709] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:48:40,710] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:48:40,710] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:48:40,710] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:40,968] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:48:40,972] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:48:41,199] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:41,200] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:41,200] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:48:41,200] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:48:41,201] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:48:41,202] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:41,435] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:48:41,438] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:48:41,652] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:41,652] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:41,653] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:48:41,653] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:48:41,653] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:48:41,653] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:41,930] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:48:41,933] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:48:42,185] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:42,185] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:42,186] [INFO] 你的请求参数是:{'mobilephone': '18999999584', 'amount': ''}
+[2018-12-22 16:48:42,186] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:48:42,186] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:48:42,186] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:42,447] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:48:42,451] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:48:42,681] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:42,682] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:42,682] [INFO] 你的请求参数是:{'mobilephone': '18999999584', 'amount': 50.123}
+[2018-12-22 16:48:42,682] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:48:42,683] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:48:42,683] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:42,971] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:48:42,975] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:48:43,276] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:43,277] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:43,278] [INFO] 你的请求参数是:{'mobilephone': '18999999584', 'amount': 500000.01}
+[2018-12-22 16:48:43,278] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:48:43,279] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:48:43,279] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:43,526] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.841000001145403e-06
+[2018-12-22 16:48:43,529] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:48:43,786] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:43,787] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:43,787] [INFO] 你的请求参数是:{'mobilephone': '18999999584', 'amount': -0.01}
+[2018-12-22 16:48:43,788] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:48:43,788] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:48:43,788] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:44,039] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:48:44,042] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:48:44,316] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:44,317] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:44,317] [INFO] 你的请求参数是:{'mobilephone': '18999999584', 'amount': 'a.01'}
+[2018-12-22 16:48:44,318] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:48:44,318] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:48:44,318] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:44,588] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:48:44,592] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:48:44,876] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:48:44,877] [INFO] 你的请求方式是:post
+[2018-12-22 16:48:44,877] [INFO] 你的请求参数是:{'mobilephone': '18999999584', 'amount': '500000'}
+[2018-12-22 16:48:44,877] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:48:44,877] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:48:44,877] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:48:45,115] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:50:15,656] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:50:15,905] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:15,906] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:15,906] [INFO] 你的请求参数是:{'mobilephone': '18999999586', 'amount': '0.01'}
+[2018-12-22 16:50:15,906] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:50:15,906] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:50:15,906] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:16,152] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.157999999700792e-06
+[2018-12-22 16:50:16,156] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:50:16,324] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:16,324] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:16,325] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:50:16,325] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:50:16,326] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:50:16,326] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:16,583] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:50:16,586] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:50:16,790] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:16,790] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:16,790] [INFO] 你的请求参数是:{'mobilephone': '${register_phoneIsNew}', 'amount': 50.1}
+[2018-12-22 16:50:16,791] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:50:16,791] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:50:16,791] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:50:17,026] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行5.473000001643413e-06
+[2018-12-22 16:50:17,030] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:50:17,222] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:17,223] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:17,223] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:50:17,223] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:50:17,223] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:50:17,224] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:17,456] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:50:17,460] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:50:17,822] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:17,822] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:17,823] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:50:17,823] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:50:17,823] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:50:17,823] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:18,071] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:50:18,073] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:50:18,262] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:18,262] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:18,262] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:50:18,268] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:50:18,269] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:50:18,269] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:18,519] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:50:18,522] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:50:18,785] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:18,785] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:18,786] [INFO] 你的请求参数是:{'mobilephone': '18999999586', 'amount': ''}
+[2018-12-22 16:50:18,786] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:50:18,786] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:50:18,786] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:19,092] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:50:19,096] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:50:19,380] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:19,380] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:19,381] [INFO] 你的请求参数是:{'mobilephone': '18999999586', 'amount': 50.123}
+[2018-12-22 16:50:19,381] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:50:19,381] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:50:19,382] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:19,630] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:50:19,633] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:50:20,038] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:20,038] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:20,038] [INFO] 你的请求参数是:{'mobilephone': '18999999586', 'amount': 500000.01}
+[2018-12-22 16:50:20,039] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:50:20,039] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:50:20,039] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:20,264] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行5.474000001726154e-06
+[2018-12-22 16:50:20,267] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:50:20,502] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:20,502] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:20,503] [INFO] 你的请求参数是:{'mobilephone': '18999999586', 'amount': -0.01}
+[2018-12-22 16:50:20,503] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:50:20,503] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:50:20,504] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:20,748] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:50:20,755] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:50:21,098] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:21,098] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:21,098] [INFO] 你的请求参数是:{'mobilephone': '18999999586', 'amount': 'a.01'}
+[2018-12-22 16:50:21,099] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:50:21,099] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:50:21,100] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:21,419] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行7.525999997426425e-06
+[2018-12-22 16:50:21,423] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:50:21,720] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:50:21,721] [INFO] 你的请求方式是:post
+[2018-12-22 16:50:21,721] [INFO] 你的请求参数是:{'mobilephone': '18999999586', 'amount': '500000'}
+[2018-12-22 16:50:21,721] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:50:21,721] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:50:21,722] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:50:22,016] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:51:44,795] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:51:45,073] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:45,074] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:45,075] [INFO] 你的请求参数是:{'mobilephone': '18999999588', 'amount': '0.01'}
+[2018-12-22 16:51:45,075] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:51:45,076] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:51:45,076] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:45,354] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:51:45,359] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:51:45,596] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:45,598] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:45,598] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:51:45,599] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:51:45,599] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:51:45,600] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:45,902] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行8.894000000481128e-06
+[2018-12-22 16:51:45,906] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:51:46,118] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:46,118] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:46,119] [INFO] 你的请求参数是:{'mobilephone': '${register_phoneIsNew}', 'amount': 50.1}
+[2018-12-22 16:51:46,119] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:51:46,119] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:51:46,119] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-22 16:51:46,361] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:51:46,366] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:51:46,583] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:46,584] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:46,584] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:51:46,584] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:51:46,585] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:51:46,586] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:46,834] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:51:46,839] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:51:47,115] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:47,116] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:47,117] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:51:47,117] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:51:47,117] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:51:47,118] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:47,377] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:51:47,381] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:51:47,776] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:47,776] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:47,776] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:51:47,777] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:51:47,777] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:51:47,777] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:48,036] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行5.473000001643413e-06
+[2018-12-22 16:51:48,039] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:51:48,308] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:48,308] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:48,308] [INFO] 你的请求参数是:{'mobilephone': '18999999588', 'amount': ''}
+[2018-12-22 16:51:48,309] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:51:48,309] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:51:48,309] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:48,562] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:51:48,566] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:51:48,840] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:48,841] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:48,841] [INFO] 你的请求参数是:{'mobilephone': '18999999588', 'amount': 50.123}
+[2018-12-22 16:51:48,841] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:51:48,841] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:51:48,842] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:49,102] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:51:49,106] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:51:49,381] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:49,382] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:49,382] [INFO] 你的请求参数是:{'mobilephone': '18999999588', 'amount': 500000.01}
+[2018-12-22 16:51:49,382] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:51:49,383] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:51:49,383] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:49,629] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:51:49,632] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:51:50,072] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:50,073] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:50,073] [INFO] 你的请求参数是:{'mobilephone': '18999999588', 'amount': -0.01}
+[2018-12-22 16:51:50,073] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:51:50,073] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:51:50,074] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:50,303] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:51:50,307] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:51:50,533] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:50,534] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:50,534] [INFO] 你的请求参数是:{'mobilephone': '18999999588', 'amount': 'a.01'}
+[2018-12-22 16:51:50,534] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:51:50,535] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:51:50,535] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:50,833] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.1569999978416945e-06
+[2018-12-22 16:51:50,835] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:51:51,131] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:51:51,132] [INFO] 你的请求方式是:post
+[2018-12-22 16:51:51,132] [INFO] 你的请求参数是:{'mobilephone': '18999999588', 'amount': '500000'}
+[2018-12-22 16:51:51,132] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:51:51,132] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:51:51,133] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:51:51,447] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:59:03,809] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01开始执行
+[2018-12-22 16:59:04,100] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:04,101] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:04,101] [INFO] 你的请求参数是:{'mobilephone': '18999999590', 'amount': '0.01'}
+[2018-12-22 16:59:04,101] [INFO] 你的预期结果是:取现成功
+[2018-12-22 16:59:04,102] [INFO] 请求的实际结果是:取现成功
+[2018-12-22 16:59:04,102] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:04,352] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_01结束执行,一共执行5.678799999841999e-05
+[2018-12-22 16:59:04,355] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02开始执行
+[2018-12-22 16:59:04,541] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:04,542] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:04,542] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-22 16:59:04,543] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-22 16:59:04,543] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-22 16:59:04,543] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:04,790] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_02结束执行,一共执行6.157000001394408e-06
+[2018-12-22 16:59:04,793] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03开始执行
+[2018-12-22 16:59:05,220] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:05,221] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:05,221] [INFO] 你的请求参数是:{'mobilephone': '18999999591', 'amount': 50.1}
+[2018-12-22 16:59:05,222] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-22 16:59:05,223] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-22 16:59:05,224] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:05,461] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_03结束执行,一共执行6.1580000014771485e-06
+[2018-12-22 16:59:05,467] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04开始执行
+[2018-12-22 16:59:05,663] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:05,663] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:05,664] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-22 16:59:05,664] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:59:05,665] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:59:05,665] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:05,947] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_04结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:59:05,951] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05开始执行
+[2018-12-22 16:59:06,217] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:06,218] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:06,219] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-22 16:59:06,219] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:59:06,219] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:59:06,220] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:06,522] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_05结束执行,一共执行7.526000000979138e-06
+[2018-12-22 16:59:06,524] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06开始执行
+[2018-12-22 16:59:06,839] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:06,839] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:06,840] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-22 16:59:06,840] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-22 16:59:06,840] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-22 16:59:06,840] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:07,094] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_06结束执行,一共执行6.8420000012281434e-06
+[2018-12-22 16:59:07,102] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07开始执行
+[2018-12-22 16:59:07,539] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:07,540] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:07,541] [INFO] 你的请求参数是:{'mobilephone': '18999999590', 'amount': ''}
+[2018-12-22 16:59:07,541] [INFO] 你的预期结果是:请输入金额
+[2018-12-22 16:59:07,541] [INFO] 请求的实际结果是:请输入金额
+[2018-12-22 16:59:07,542] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:07,822] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_07结束执行,一共执行6.84199999767543e-06
+[2018-12-22 16:59:07,825] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08开始执行
+[2018-12-22 16:59:08,149] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:08,150] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:08,150] [INFO] 你的请求参数是:{'mobilephone': '18999999590', 'amount': 50.123}
+[2018-12-22 16:59:08,151] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:59:08,151] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-22 16:59:08,152] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:08,396] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_08结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:59:08,400] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09开始执行
+[2018-12-22 16:59:08,763] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:08,764] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:08,764] [INFO] 你的请求参数是:{'mobilephone': '18999999590', 'amount': 500000.01}
+[2018-12-22 16:59:08,764] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:59:08,764] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:59:08,765] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:09,102] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_09结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:59:09,107] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10开始执行
+[2018-12-22 16:59:10,544] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:10,545] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:10,545] [INFO] 你的请求参数是:{'mobilephone': '18999999590', 'amount': -0.01}
+[2018-12-22 16:59:10,545] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:59:10,546] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-22 16:59:10,546] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:10,833] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_10结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:59:10,836] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11开始执行
+[2018-12-22 16:59:11,151] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:11,152] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:11,153] [INFO] 你的请求参数是:{'mobilephone': '18999999590', 'amount': 'a.01'}
+[2018-12-22 16:59:11,153] [INFO] 你的预期结果是:请输入数字
+[2018-12-22 16:59:11,154] [INFO] 请求的实际结果是:请输入数字
+[2018-12-22 16:59:11,154] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:11,445] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_11结束执行,一共执行6.157999997924435e-06
+[2018-12-22 16:59:11,448] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12开始执行
+[2018-12-22 16:59:11,734] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/withdraw
+[2018-12-22 16:59:11,734] [INFO] 你的请求方式是:post
+[2018-12-22 16:59:11,734] [INFO] 你的请求参数是:{'mobilephone': '18999999590', 'amount': '500000'}
+[2018-12-22 16:59:11,735] [INFO] 你的预期结果是:余额不足，请修改提现额度
+[2018-12-22 16:59:11,735] [INFO] 请求的实际结果是:余额不足，请修改提现额度
+[2018-12-22 16:59:11,735] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-22 16:59:12,061] [INFO] 测试用例test_case.http_request_case.Http_test_test_4withdraw_12结束执行,一共执行6.1580000014771485e-06

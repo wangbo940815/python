@@ -1,0 +1,1 @@
+from .chrome_set import set_flash

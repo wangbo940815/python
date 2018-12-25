@@ -1,0 +1,42 @@
+1543287816646	geckodriver	INFO	geckodriver 0.19.1
+1543287816666	geckodriver	INFO	Listening on 127.0.0.1:5016
+1543287820177	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1.BF-\\AppData\\Local\\Temp\\rust_mozprofile.iRqRasXSNOqv"
+1543287845306	Marionette	INFO	Enabled via --marionette
+1543287961366	geckodriver	INFO	geckodriver 0.19.1
+1543287961376	geckodriver	INFO	Listening on 127.0.0.1:5099
+1543287964514	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1.BF-\\AppData\\Local\\Temp\\rust_mozprofile.4CbkpaZhP2Xx"
+1543287970607	Marionette	INFO	Enabled via --marionette
+1543287992935	Marionette	INFO	Listening on port 5107
+1543287994058	Marionette	INFO	Listening on port 5107
+1543287994281	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator.BF-20180623OAFS\AppData\Local\openvr\openvrpaths.vrpath
+1543288919692	geckodriver	INFO	geckodriver 0.19.1
+1543288919712	geckodriver	INFO	Listening on 127.0.0.1:5369
+1543288922901	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1.BF-\\AppData\\Local\\Temp\\rust_mozprofile.tIK148ySt1uS"
+1543288931415	Marionette	INFO	Enabled via --marionette
+1543288953128	Marionette	INFO	Listening on port 5377
+1543288953664	Marionette	INFO	Listening on port 5377
+1543288954214	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\Administrator.BF-20180623OAFS\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 539: TypeError: this.tablesData[table] is undefined
+1543289134334	geckodriver	INFO	geckodriver 0.19.1
+1543289134354	geckodriver	INFO	Listening on 127.0.0.1:5492
+1543289137489	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1.BF-\\AppData\\Local\\Temp\\rust_mozprofile.plJJb6qAdH8C"
+1543289143698	Marionette	INFO	Enabled via --marionette
+1543289161795	Marionette	INFO	Listening on port 5500
+1543289162058	Marionette	INFO	Listening on port 5500
+1543289163613	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+Unable to readUnable to read VR Path Registry from C:\Users\Administrator.BF-20180623OAFS\AppData\Local\openvr\openvrpaths.vrpath
+1544258860607	geckodriver	INFO	geckodriver 0.19.1
+1544258860732	geckodriver	INFO	Listening on 127.0.0.1:54561

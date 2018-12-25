@@ -1,0 +1,5 @@
+[2018-12-25 11:35:29,497] [INFO] 测试用例test_case.login.Http_test_test_1register开始执行
+[2018-12-25 11:36:29,155] [INFO] 测试用例test_case.login.Http_test_test_1register开始执行
+[2018-12-25 11:36:57,953] [INFO] 测试用例test_case.login.Http_test_test_1register开始执行
+[2018-12-25 11:37:09,318] [INFO] 测试用例test_case.login.Http_test_test_1register开始执行
+[2018-12-25 11:37:50,597] [INFO] 测试用例test_case.login.Http_test_test_1register开始执行

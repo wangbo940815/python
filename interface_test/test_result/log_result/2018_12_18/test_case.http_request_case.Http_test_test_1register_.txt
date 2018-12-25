@@ -1,0 +1,160 @@
+[2018-12-18 17:08:54,187] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_01开始执行
+[2018-12-18 17:08:54,578] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:54,578] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:54,578] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-18 17:08:54,578] [INFO] 你的预期结果是:注册成功
+[2018-12-18 17:08:54,578] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-18 17:08:54,578] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-18 17:08:54,855] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_01结束执行,一共执行8.209999999841955e-06
+[2018-12-18 17:08:54,880] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_02开始执行
+[2018-12-18 17:08:55,233] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:55,233] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:55,233] [INFO] 你的请求参数是:{'mobilephone': '18611223355', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2018-12-18 17:08:55,233] [INFO] 你的预期结果是:注册成功
+[2018-12-18 17:08:55,233] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-18 17:08:55,233] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-18 17:08:55,501] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_02结束执行,一共执行6.156999999618051e-06
+[2018-12-18 17:08:55,503] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_03开始执行
+[2018-12-18 17:08:55,780] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:55,780] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:55,780] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2018-12-18 17:08:55,780] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-18 17:08:55,780] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-18 17:08:55,780] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:08:56,000] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_03结束执行,一共执行6.158000000144881e-06
+[2018-12-18 17:08:56,000] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_04开始执行
+[2018-12-18 17:08:56,221] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:56,221] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:56,221] [INFO] 你的请求参数是:{'mobilephone': '18611002233', 'pwd': '', 'regname': '简'}
+[2018-12-18 17:08:56,221] [INFO] 你的预期结果是:密码不能为空
+[2018-12-18 17:08:56,221] [INFO] 请求的实际结果是:密码不能为空
+[2018-12-18 17:08:56,221] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:08:56,461] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_04结束执行,一共执行6.158000000144881e-06
+[2018-12-18 17:08:56,461] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_05开始执行
+[2018-12-18 17:08:56,642] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:56,642] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:56,642] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-18 17:08:56,642] [INFO] 你的预期结果是:手机号码已注册
+[2018-12-18 17:08:56,642] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-18 17:08:56,642] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-18 17:08:56,956] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_05结束执行,一共执行6.841999999895876e-06
+[2018-12-18 17:08:56,966] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_06开始执行
+[2018-12-18 17:08:57,206] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:57,206] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:57,206] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890123456789'}
+[2018-12-18 17:08:57,206] [INFO] 你的预期结果是:密码长度必须为6~18
+[2018-12-18 17:08:57,206] [INFO] 请求的实际结果是:密码长度必须为6~18
+[2018-12-18 17:08:57,206] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:08:57,484] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_06结束执行,一共执行6.15700000050623e-06
+[2018-12-18 17:08:57,493] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_07开始执行
+[2018-12-18 17:08:57,730] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:57,731] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:57,731] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '12345'}
+[2018-12-18 17:08:57,731] [INFO] 你的预期结果是:密码长度必须为6~18
+[2018-12-18 17:08:57,732] [INFO] 请求的实际结果是:密码长度必须为6~18
+[2018-12-18 17:08:57,732] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:08:58,290] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_07结束执行,一共执行6.842000000339965e-06
+[2018-12-18 17:08:58,294] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_08开始执行
+[2018-12-18 17:08:58,496] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:58,496] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:58,496] [INFO] 你的请求参数是:{'mobilephone': '135508485233', 'pwd': '1234567890'}
+[2018-12-18 17:08:58,497] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-18 17:08:58,497] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-18 17:08:58,497] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:08:58,713] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_08结束执行,一共执行6.15800000058897e-06
+[2018-12-18 17:08:58,715] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_09开始执行
+[2018-12-18 17:08:58,949] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:58,950] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:58,950] [INFO] 你的请求参数是:{'mobilephone': '1861122334', 'pwd': '1234567890'}
+[2018-12-18 17:08:58,951] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-18 17:08:58,951] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-18 17:08:58,952] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:08:59,183] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_09结束执行,一共执行6.15800000058897e-06
+[2018-12-18 17:08:59,185] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_10开始执行
+[2018-12-18 17:08:59,504] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:08:59,505] [INFO] 你的请求方式是:post
+[2018-12-18 17:08:59,506] [INFO] 你的请求参数是:{'mobilephone': '1861122334a', 'pwd': '1234567890'}
+[2018-12-18 17:08:59,506] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-18 17:08:59,507] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-18 17:08:59,507] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:08:59,739] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_10结束执行,一共执行6.157999999700792e-06
+[2018-12-18 17:15:41,002] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_01开始执行
+[2018-12-18 17:15:41,246] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:41,247] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:41,248] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-18 17:15:41,248] [INFO] 你的预期结果是:注册成功
+[2018-12-18 17:15:41,249] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-18 17:15:41,249] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-18 17:15:41,481] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_01结束执行,一共执行6.841999999895876e-06
+[2018-12-18 17:15:41,485] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_02开始执行
+[2018-12-18 17:15:41,699] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:41,700] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:41,701] [INFO] 你的请求参数是:{'mobilephone': '18611223355', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2018-12-18 17:15:41,701] [INFO] 你的预期结果是:注册成功
+[2018-12-18 17:15:41,702] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-18 17:15:41,702] [ERROR] 测试用例开始执行的结果是:Fail
+[2018-12-18 17:15:41,925] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_02结束执行,一共执行8.209999999841955e-06
+[2018-12-18 17:15:41,928] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_03开始执行
+[2018-12-18 17:15:42,145] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:42,146] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:42,146] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2018-12-18 17:15:42,147] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-18 17:15:42,147] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-18 17:15:42,147] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:42,374] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_03结束执行,一共执行6.842000000339965e-06
+[2018-12-18 17:15:42,377] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_04开始执行
+[2018-12-18 17:15:42,695] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:42,695] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:42,696] [INFO] 你的请求参数是:{'mobilephone': '18611002233', 'pwd': '', 'regname': '简'}
+[2018-12-18 17:15:42,696] [INFO] 你的预期结果是:密码不能为空
+[2018-12-18 17:15:42,696] [INFO] 请求的实际结果是:密码不能为空
+[2018-12-18 17:15:42,697] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:42,922] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_04结束执行,一共执行6.1570000000621405e-06
+[2018-12-18 17:15:42,925] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_05开始执行
+[2018-12-18 17:15:43,178] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:43,179] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:43,179] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-18 17:15:43,180] [INFO] 你的预期结果是:手机号码已被注册
+[2018-12-18 17:15:43,180] [INFO] 请求的实际结果是:手机号码已被注册
+[2018-12-18 17:15:43,181] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:43,403] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_05结束执行,一共执行5.4729999998670564e-06
+[2018-12-18 17:15:43,405] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_06开始执行
+[2018-12-18 17:15:43,600] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:43,601] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:43,601] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890123456789'}
+[2018-12-18 17:15:43,602] [INFO] 你的预期结果是:密码长度必须为6~18
+[2018-12-18 17:15:43,602] [INFO] 请求的实际结果是:密码长度必须为6~18
+[2018-12-18 17:15:43,603] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:43,849] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_06结束执行,一共执行6.158000000144881e-06
+[2018-12-18 17:15:43,851] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_07开始执行
+[2018-12-18 17:15:44,216] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:44,217] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:44,218] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '12345'}
+[2018-12-18 17:15:44,218] [INFO] 你的预期结果是:密码长度必须为6~18
+[2018-12-18 17:15:44,218] [INFO] 请求的实际结果是:密码长度必须为6~18
+[2018-12-18 17:15:44,219] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:44,445] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_07结束执行,一共执行6.157999999700792e-06
+[2018-12-18 17:15:44,447] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_08开始执行
+[2018-12-18 17:15:44,662] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:44,663] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:44,663] [INFO] 你的请求参数是:{'mobilephone': '135508485233', 'pwd': '1234567890'}
+[2018-12-18 17:15:44,663] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-18 17:15:44,664] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-18 17:15:44,664] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:44,916] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_08结束执行,一共执行5.4729999998670564e-06
+[2018-12-18 17:15:44,918] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_09开始执行
+[2018-12-18 17:15:45,096] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:45,097] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:45,097] [INFO] 你的请求参数是:{'mobilephone': '1861122334', 'pwd': '1234567890'}
+[2018-12-18 17:15:45,098] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-18 17:15:45,098] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-18 17:15:45,099] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:45,321] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_09结束执行,一共执行5.4729999998670564e-06
+[2018-12-18 17:15:45,323] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_10开始执行
+[2018-12-18 17:15:45,522] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/register
+[2018-12-18 17:15:45,523] [INFO] 你的请求方式是:post
+[2018-12-18 17:15:45,523] [INFO] 你的请求参数是:{'mobilephone': '1861122334a', 'pwd': '1234567890'}
+[2018-12-18 17:15:45,524] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-18 17:15:45,524] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-18 17:15:45,524] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-18 17:15:45,755] [INFO] 测试用例test_case.http_request_case.Http_test_test_1register_10结束执行,一共执行6.15800000058897e-06

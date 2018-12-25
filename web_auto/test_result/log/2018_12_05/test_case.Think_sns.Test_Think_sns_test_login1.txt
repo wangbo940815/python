@@ -1,0 +1,4 @@
+[2018_12_05 20_53_36] [INFO] 测试用例test_case.Think_sns.Test_Think_sns_test_login在18.908165429开始执行
+[2018_12_05 20_53_36] [INFO] 测试用例test_case.Think_sns.Test_Think_sns_test_login在18.908174324结束执行,一共执行8.895000000563869e-06
+[2018_12_05 20_55_52] [INFO] 测试用例test_case.Think_sns.Test_Think_sns_test_login在19.980171762开始执行
+[2018_12_05 20_55_52] [INFO] 测试用例test_case.Think_sns.Test_Think_sns_test_login在19.980181341结束执行,一共执行9.579000000314863e-06

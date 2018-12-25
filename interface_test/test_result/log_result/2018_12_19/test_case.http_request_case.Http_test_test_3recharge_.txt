@@ -1,0 +1,88 @@
+[2018-12-19 20:37:19,013] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_01开始执行
+[2018-12-19 20:37:19,233] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:19,233] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:19,233] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 0.01}
+[2018-12-19 20:37:19,233] [INFO] 你的预期结果是:充值成功
+[2018-12-19 20:37:19,233] [INFO] 请求的实际结果是:充值成功
+[2018-12-19 20:37:19,233] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:19,433] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_01结束执行,一共执行6.157000001394408e-06
+[2018-12-19 20:37:19,433] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_02开始执行
+[2018-12-19 20:37:19,676] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:19,676] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:19,676] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-19 20:37:19,676] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-19 20:37:19,676] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-19 20:37:19,676] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:19,906] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_02结束执行,一共执行6.1580000014771485e-06
+[2018-12-19 20:37:19,906] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_03开始执行
+[2018-12-19 20:37:20,188] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:20,188] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:20,188] [INFO] 你的请求参数是:{'mobilephone': '13550848389', 'amount': 50.1}
+[2018-12-19 20:37:20,188] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-19 20:37:20,188] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-19 20:37:20,188] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:20,408] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_03结束执行,一共执行6.157999997924435e-06
+[2018-12-19 20:37:20,408] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_04开始执行
+[2018-12-19 20:37:20,698] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:20,698] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:20,698] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-19 20:37:20,698] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-19 20:37:20,698] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-19 20:37:20,698] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:20,919] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_04结束执行,一共执行5.474000001726154e-06
+[2018-12-19 20:37:20,929] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_05开始执行
+[2018-12-19 20:37:21,159] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:21,159] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:21,159] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-19 20:37:21,159] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-19 20:37:21,159] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-19 20:37:21,159] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:21,371] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_05结束执行,一共执行6.8420000012281434e-06
+[2018-12-19 20:37:21,371] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_06开始执行
+[2018-12-19 20:37:21,621] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:21,621] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:21,621] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-19 20:37:21,621] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-19 20:37:21,621] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-19 20:37:21,621] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:21,841] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_06结束执行,一共执行6.157000001394408e-06
+[2018-12-19 20:37:21,841] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_07开始执行
+[2018-12-19 20:37:22,092] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:22,092] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:22,092] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': ''}
+[2018-12-19 20:37:22,092] [INFO] 你的预期结果是:请输入金额
+[2018-12-19 20:37:22,092] [INFO] 请求的实际结果是:请输入金额
+[2018-12-19 20:37:22,092] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:22,314] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_07结束执行,一共执行6.157999997924435e-06
+[2018-12-19 20:37:22,314] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_08开始执行
+[2018-12-19 20:37:22,634] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:22,634] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:22,634] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 50.123}
+[2018-12-19 20:37:22,634] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-19 20:37:22,634] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-19 20:37:22,644] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:22,864] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_08结束执行,一共执行6.1569999978416945e-06
+[2018-12-19 20:37:22,864] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_09开始执行
+[2018-12-19 20:37:23,236] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:23,236] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:23,236] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 500000.01}
+[2018-12-19 20:37:23,236] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-19 20:37:23,236] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-19 20:37:23,236] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:23,446] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_09结束执行,一共执行6.157000001394408e-06
+[2018-12-19 20:37:23,446] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_10开始执行
+[2018-12-19 20:37:23,628] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:23,628] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:23,628] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': -0.01}
+[2018-12-19 20:37:23,628] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-19 20:37:23,628] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-19 20:37:23,628] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:23,848] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_10结束执行,一共执行6.157000001394408e-06
+[2018-12-19 20:37:23,848] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_11开始执行
+[2018-12-19 20:37:24,070] [INFO] 你请求的URL地址是:http://120.78.128.25:8080/futureloan/mvc/api/member/recharge
+[2018-12-19 20:37:24,070] [INFO] 你的请求方式是:post
+[2018-12-19 20:37:24,070] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 'a.01'}
+[2018-12-19 20:37:24,070] [INFO] 你的预期结果是:请输入数字
+[2018-12-19 20:37:24,070] [INFO] 请求的实际结果是:请输入数字
+[2018-12-19 20:37:24,070] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-19 20:37:24,294] [INFO] 测试用例test_case.http_request_case.Http_test_test_3recharge_11结束执行,一共执行6.8420000012281434e-06

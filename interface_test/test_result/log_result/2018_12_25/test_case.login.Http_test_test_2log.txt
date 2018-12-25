@@ -1,0 +1,2 @@
+[2018-12-25 11:43:19,391] [INFO] 测试用例test_case.login.Http_test_test_2login开始执行
+[2018-12-25 11:46:34,395] [INFO] 测试用例test_case.login.Http_test_test_2login开始执行
