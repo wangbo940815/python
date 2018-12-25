@@ -9,7 +9,7 @@ mobilephone_sql="select mobilephone from member where  not mobilephone is null o
 class Http_test(unittest.TestCase):
     recharge_data=Do_excel().read_excel("recharge")
     mobilephone_sql="select mobilephone from member where  not mobilephone is null order by mobilephone desc limit 1"
-    money_sql=
+    money_sql="select leaveAmont from member where mobilephone=''"
     def setUp(self):
         self.phone=Replace_mobilephone(mobilephone_sql)
         

@@ -15,7 +15,7 @@ class Record_logging():
         self.log_ouyput_level=self.log_set.get("log","log_output_level")
         self.log_level=self.log_set.get("log","log_get_level")
         self.log_formatter=self.log_set.get("log","log_formatter")
-        
+
         if name!=None:
             global new_name
             new_name=name
@@ -60,5 +60,9 @@ class Record_logging():
         self.logger.warning(message)
     def error(self,message):
         self.logger.error(message)
-    def Log_critical(self,message):
+    def critical(self,message):
         self.logger.critical(message)
+
+if __name__ == '__main__':
+    a=Record_logging("rt")
+    a.info("asdasd") 
