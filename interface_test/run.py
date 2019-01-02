@@ -1,22 +1,22 @@
 import  unittest,os,time
 from comm.HTMLTestRunnerNew import HTMLTestRunner
 from comm.DO_excel import *
-from test_case import http_request_case
+from test_case import *
 from comm import constans
 
-
+'''根据模糊匹配收集测试用例，生存测试报告，报告形式有HTMLTESTreport这个py文件决定，可在网上下载其他，调用即可'''
 if __name__ == '__main__':
     file_path=constans.html_path+os.sep
     name=time.strftime("%Y_%m_%d_%H_%M_%S")+".html"
     file_path=file_path+name
-    suite=unittest.TestSuite()
+#     suite=unittest.TestSuite()
+    discover=unittest.defaultTestLoader.discover(constans.test_case_path, "test_*.py")
     loader=unittest.TestLoader()
-    suite.addTest(loader.loadTestsFromModule(http_request_case))
-    print(file_path)
+
     with open(file_path,"wb+") as file:
-        runner=HTMLTestRunner(stream=file,title="WEB自动化测试报告",description="执行情况如下",
+        runner=HTMLTestRunner(stream=file,title="接口自动化测试报告",description="执行情况如下",
                               )
-        runner.run(suite)
+        runner.run(discover)
 
    
     

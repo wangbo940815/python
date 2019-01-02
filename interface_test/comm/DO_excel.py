@@ -7,6 +7,7 @@ import re
 from comm.connect_db import Connect_db
 class Case:
     def __init__(self):
+        '''利用类的属性存储excel读取到的数据，增加读代码的可读性，也可以用变量进行存储'''
         self.id=None
         self.url=None
         self.method=None
@@ -17,6 +18,8 @@ class Case:
         self.book_name=None
         self.sheet_name=None    
 class  Do_excel:
+    ''' excel操作类，该类提供2个方法，一个读取方法，获取excel中的测试数据，并进行简单的处理，例如序列化
+    另一个方法提供excel会写操作，主要提供于测试用例执行后的返回结果和测试结果回写到excel中'''
     def __init__(self):
         self.excel_path=constans.data_path
     def read_excel(self,sheet_name):
@@ -35,7 +38,6 @@ class  Do_excel:
             case.test_data=case.test_data
             case.expect=   json.loads(sheet.cell(i,6).value)
             case.actual=sheet.cell(i,7).value
-#             case.book_name=book_name
             case.sheet_name=sheet_name
             cases.append(case)
         return cases

@@ -5,8 +5,9 @@ from comm import constans
 moudle=""
 new_name=""
 class Record_logging():
-
+    '''日志收集器类 '''
     def __init__(self,name=None,get_moudle_name=None):
+        '''name日志收集器名字，get_moudle_name要生成的日志文件的名字'''
         self.name=name
         
         
@@ -24,6 +25,7 @@ class Record_logging():
             moudle=get_moudle_name
         """设置日志路径"""
         now_date=time.strftime('%Y_%m_%d')
+        '''根据日期新建文件夹存放日志文件，可查看test_result下log_result下的日志生成结果'''
         path=constans.log_path+os.sep+now_date
         if not os.path.isdir(path):
             mkdir(path)    
@@ -32,17 +34,17 @@ class Record_logging():
         
         self.logger=logging.getLogger(self.name)   
         self.logger.setLevel(self.log_level)
-        
+        '''该判断，避免一条日志重复打印，可以去除if后看看打印的结果进行对比'''
         if not self.logger.handlers:
             """制定统一的输出格式:%(levelname)s 文本形式的日志级别
             %(asctime)s 字符串形式的当前时间。默认格式是 “2003-07-08 16:49:45,896”。逗号后面的是毫秒
             %(message)s  %(message)s 用户输出的消息"""
             fmt = logging.Formatter(self.log_formatter)
-            """设置控制台日志"""     
+            """设置控制台日志（信息输出到控制台）"""     
             cmd_h=logging.StreamHandler()
             cmd_h.setLevel(self.log_ouyput_level)
             cmd_h.setFormatter(fmt)
-            """设置文件日志"""
+            """设置文件日志（输出到指定文件中）"""
             file_h=logging.FileHandler(file_path,encoding="utf8")  #指定日志路径
             file_h.setLevel(self.log_ouyput_level)
             file_h.setFormatter(fmt)

@@ -264,3 +264,99 @@
 [2018-12-25 13:59:50,994] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 'a.01'}
 [2018-12-25 13:59:50,994] [INFO] 你的预期结果是:请输入数字
 [2018-12-25 13:59:50,994] [INFO] 请求的实际结果是:请输入数字
+[2018-12-25 17:45:45,001] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_01开始执行
+[2018-12-25 17:45:45,439] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2018-12-25 17:45:45,439] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:45,439] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2018-12-25 17:45:45,439] [INFO] 你的预期结果是:登录成功
+[2018-12-25 17:45:45,439] [INFO] 请求的实际结果是:登录成功
+[2018-12-25 17:45:45,439] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:45,688] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_01结束执行,一共执行1.1632000000538767e-05
+[2018-12-25 17:45:45,688] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_02开始执行
+[2018-12-25 17:45:45,907] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:45,907] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:45,907] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 0.01}
+[2018-12-25 17:45:45,907] [INFO] 你的预期结果是:充值成功
+[2018-12-25 17:45:45,907] [INFO] 请求的实际结果是:充值成功
+[2018-12-25 17:45:45,907] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:46,141] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_02结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:46,141] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_03开始执行
+[2018-12-25 17:45:46,345] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:46,345] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:46,345] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2018-12-25 17:45:46,345] [INFO] 你的预期结果是:手机号不能为空
+[2018-12-25 17:45:46,345] [INFO] 请求的实际结果是:手机号不能为空
+[2018-12-25 17:45:46,345] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:46,579] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_03结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:46,579] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_04开始执行
+[2018-12-25 17:45:47,938] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:47,938] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:47,938] [INFO] 你的请求参数是:{'mobilephone': '18999999662', 'amount': 50.1}
+[2018-12-25 17:45:47,938] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2018-12-25 17:45:47,938] [INFO] 请求的实际结果是:此手机号对应的会员不存在
+[2018-12-25 17:45:47,938] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:48,173] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_04结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:48,173] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_05开始执行
+[2018-12-25 17:45:48,391] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:48,391] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:48,391] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2018-12-25 17:45:48,391] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-25 17:45:48,391] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-25 17:45:48,391] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:48,625] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_05结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:48,641] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_06开始执行
+[2018-12-25 17:45:48,812] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:48,812] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:48,812] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2018-12-25 17:45:48,812] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-25 17:45:48,812] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-25 17:45:48,812] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:49,078] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_06结束执行,一共执行6.156999999618051e-06
+[2018-12-25 17:45:49,078] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_07开始执行
+[2018-12-25 17:45:49,328] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:49,328] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:49,328] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2018-12-25 17:45:49,328] [INFO] 你的预期结果是:手机号码格式不正确
+[2018-12-25 17:45:49,328] [INFO] 请求的实际结果是:手机号码格式不正确
+[2018-12-25 17:45:49,328] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:49,578] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_07结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:49,593] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_08开始执行
+[2018-12-25 17:45:49,813] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:49,813] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:49,813] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': ''}
+[2018-12-25 17:45:49,813] [INFO] 你的预期结果是:请输入金额
+[2018-12-25 17:45:49,813] [INFO] 请求的实际结果是:请输入金额
+[2018-12-25 17:45:49,813] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:50,062] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_08结束执行,一共执行6.1580000014771485e-06
+[2018-12-25 17:45:50,062] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_09开始执行
+[2018-12-25 17:45:50,265] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:50,265] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:50,265] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 50.123}
+[2018-12-25 17:45:50,265] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2018-12-25 17:45:50,265] [INFO] 请求的实际结果是:输入金额的金额小数不能超过两位
+[2018-12-25 17:45:50,265] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:50,516] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_09结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:50,516] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_10开始执行
+[2018-12-25 17:45:50,734] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:50,734] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:50,734] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 500000.01}
+[2018-12-25 17:45:50,734] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-25 17:45:50,734] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-25 17:45:50,734] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:50,968] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_10结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:50,968] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_11开始执行
+[2018-12-25 17:45:51,203] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:51,203] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:51,203] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': -0.01}
+[2018-12-25 17:45:51,203] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2018-12-25 17:45:51,203] [INFO] 请求的实际结果是:请输入范围在0到50万之间的正数金额
+[2018-12-25 17:45:51,203] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:51,453] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_11结束执行,一共执行6.157999999700792e-06
+[2018-12-25 17:45:51,453] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_12开始执行
+[2018-12-25 17:45:51,688] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2018-12-25 17:45:51,688] [INFO] 你的请求方式是:post
+[2018-12-25 17:45:51,688] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 'a.01'}
+[2018-12-25 17:45:51,688] [INFO] 你的预期结果是:请输入数字
+[2018-12-25 17:45:51,688] [INFO] 请求的实际结果是:请输入数字
+[2018-12-25 17:45:51,688] [INFO] 测试用例开始执行的结果是:Pass
+[2018-12-25 17:45:51,922] [INFO] 测试用例test_case.recharge.Http_test_test_3recharge_12结束执行,一共执行6.157999999700792e-06

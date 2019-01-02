@@ -2,6 +2,8 @@ from configparser import ConfigParser
 import os 
 from comm import constans
 class Read_conf():
+    '''读取配置文件的类，该处有一个开关配置文件，构造方法中读取开关配置文件，判断bool，根据bool的值选择性读取配置文件
+    ，在有多套测试环境时候可进行此操作'''
     def __init__(self):
         self.conf_path=constans.conf_path+"switch.conf"
         self.read()

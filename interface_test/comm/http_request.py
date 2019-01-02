@@ -2,8 +2,11 @@ import time,requests
 from requests import sessions
 from logging import exception
 class Http_request:
+    '''http请求类，主要把requests三方包进行封装，主要需要传入参数为URL，cookies，请求数据data或者params，2者差别自己百度
+               ，headers可以根据接口文档选择性配置，，在需要验权，和有浏览器限制或者接口文档要求时，需要自己封装一个请求头，这时需要
+            传入headers'''
     def __init__(self,url,method,params=None,headers=None,cookies=None):
-        """heards需要进行该进"""
+        '''封装了post和 get方法，其他方法可以添加'''
         try :
             if method.upper()=="GET":
                 self.res=requests.get(url,params=params,cookies=cookies,headers=headers)

@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>接口自动化测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">接口自动化测试报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 王波</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-01-02 14:14:55</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:27.063187</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 46，通过 37，失败 9，通过率= 80.43%</p>
+
+<p class='description'>执行情况如下</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 80.43% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 9 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 37 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 46 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='failClass warning'>
+    <td>test_bidloan.Http_test</td>
+    <td class="text-center">19</td>
+    <td class="text-center">13</td>
+    <td class="text-center">6</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',19)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_01: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
+    <pre>
+    
+pt1_1: [2019-01-02 14:14:55,078] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_01开始执行
+[2019-01-02 14:14:55,309] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2019-01-02 14:14:55,309] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:55,309] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2019-01-02 14:14:55,309] [INFO] 你的预期结果是:登录成功
+[2019-01-02 14:14:55,309] [INFO] 请求的实际结果是:10001
+[2019-01-02 14:14:55,309] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:14:55,549] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_01结束执行,一共执行0.18722426599999986
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_2' class='none'>
+    <td class='failCase'><div class='testcase'>test_5bidloan_02: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <div id='div_ft1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <div id='div_ft1_2' class="collapse in" align="left">
+    <pre>
+    
+ft1_2: [2019-01-02 14:14:55,549] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_02开始执行
+[2019-01-02 14:14:56,800] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:56,800] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:56,800] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': 28, 'amount': 100}
+[2019-01-02 14:14:56,800] [INFO] 你的预期结果是:竞标成功
+[2019-01-02 14:14:56,800] [INFO] 请求的实际结果是:10001
+[2019-01-02 14:14:56,800] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:14:57,040] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_02结束执行,一共执行1.2431504320000002
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_bidloan.py", line 30, in test_5bidloan
+    self.assertEqual(begin_amount-amount,end_amount)
+AssertionError: Decimal('-99.98') != Decimal('0.02')
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_03: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in" align="left">
+    <pre>
+    
+pt1_3: [2019-01-02 14:14:57,040] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_03开始执行
+[2019-01-02 14:14:57,221] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:57,221] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:57,221] [INFO] 你的请求参数是:{'memberId': '', 'password': '0123456789', 'loanId': 1234, 'amount': 1000}
+[2019-01-02 14:14:57,221] [INFO] 你的预期结果是:参数错误:所有参数不能为空
+[2019-01-02 14:14:57,221] [INFO] 请求的实际结果是:11003
+[2019-01-02 14:14:57,221] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:14:57,491] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_03结束执行,一共执行0.18110474300000057
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_04: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in" align="left">
+    <pre>
+    
+pt1_4: [2019-01-02 14:14:57,491] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_04开始执行
+[2019-01-02 14:14:57,651] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:57,651] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:57,651] [INFO] 你的请求参数是:{'memberId': 123456, 'password': '', 'loanId': 1234, 'amount': 1000}
+[2019-01-02 14:14:57,651] [INFO] 你的预期结果是:参数错误:所有参数不能为空
+[2019-01-02 14:14:57,651] [INFO] 请求的实际结果是:11003
+[2019-01-02 14:14:57,651] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:14:57,901] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_04结束执行,一共执行0.16100692900000002
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_05: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse in" align="left">
+    <pre>
+    
+pt1_5: [2019-01-02 14:14:57,901] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_05开始执行
+[2019-01-02 14:14:58,091] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:58,091] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:58,091] [INFO] 你的请求参数是:{'memberId': 123456, 'password': '0123456789', 'loanId': '', 'amount': 1000}
+[2019-01-02 14:14:58,091] [INFO] 你的预期结果是:参数错误:所有参数不能为空
+[2019-01-02 14:14:58,091] [INFO] 请求的实际结果是:11003
+[2019-01-02 14:14:58,091] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:14:58,361] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_05结束执行,一共执行0.18631769499999962
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_06: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse in" align="left">
+    <pre>
+    
+pt1_6: [2019-01-02 14:14:58,361] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_06开始执行
+[2019-01-02 14:14:58,532] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:58,532] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:58,532] [INFO] 你的请求参数是:{'memberId': 123456, 'password': '0123456789', 'loanId': 1234, 'amount': ''}
+[2019-01-02 14:14:58,532] [INFO] 你的预期结果是:参数错误:所有参数不能为空
+[2019-01-02 14:14:58,532] [INFO] 请求的实际结果是:11003
+[2019-01-02 14:14:58,532] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:14:58,792] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_06结束执行,一共执行0.174309912
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_07: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse in" align="left">
+    <pre>
+    
+pt1_7: [2019-01-02 14:14:58,792] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_07开始执行
+[2019-01-02 14:14:58,962] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:58,962] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:58,962] [INFO] 你的请求参数是:{'memberId': -1, 'password': '0123456789', 'loanId': '1234', 'amount': 1000}
+[2019-01-02 14:14:58,962] [INFO] 你的预期结果是:参数错误,memberId必须是大于0的正整数
+[2019-01-02 14:14:58,962] [INFO] 请求的实际结果是:11004
+[2019-01-02 14:14:58,962] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:14:59,212] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_07结束执行,一共执行0.16623424999999958
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_8' class='none'>
+    <td class='failCase'><div class='testcase'>test_5bidloan_08: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_8'>失败</button>
+    <div id='div_ft1_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_8'>失败</button>
+    <div id='div_ft1_8' class="collapse in" align="left">
+    <pre>
+    
+ft1_8: [2019-01-02 14:14:59,212] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_08开始执行
+[2019-01-02 14:14:59,382] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:59,382] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:59,382] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': -1, 'amount': 1000}
+[2019-01-02 14:14:59,382] [INFO] 你的预期结果是:参数错误,loanId必须是大于0的正整数
+[2019-01-02 14:14:59,382] [INFO] 请求的实际结果是:11009
+[2019-01-02 14:14:59,382] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:14:59,644] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_08结束执行,一共执行0.17471153999999967
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_bidloan.py", line 40, in test_5bidloan
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '11009' != '11005'
+- 11009
+?     ^
++ 11005
+?     ^
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_9' class='none'>
+    <td class='failCase'><div class='testcase'>test_5bidloan_09: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_9'>失败</button>
+    <div id='div_ft1_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_9'>失败</button>
+    <div id='div_ft1_9' class="collapse in" align="left">
+    <pre>
+    
+ft1_9: [2019-01-02 14:14:59,644] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_09开始执行
+[2019-01-02 14:14:59,835] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:14:59,835] [INFO] 你的请求方式是:post
+[2019-01-02 14:14:59,835] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': 11.2, 'amount': 1000}
+[2019-01-02 14:14:59,835] [INFO] 你的预期结果是:参数错误,loanId必须是大于0的正整数
+[2019-01-02 14:14:59,835] [INFO] 请求的实际结果是:11009
+[2019-01-02 14:14:59,835] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:15:00,085] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_09结束执行,一共执行0.18481928799999991
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_bidloan.py", line 40, in test_5bidloan
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '11009' != '11005'
+- 11009
+?     ^
++ 11005
+?     ^
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_10' class='none'>
+    <td class='failCase'><div class='testcase'>test_5bidloan_10: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_10'>失败</button>
+    <div id='div_ft1_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_10'>失败</button>
+    <div id='div_ft1_10' class="collapse in" align="left">
+    <pre>
+    
+ft1_10: [2019-01-02 14:15:00,085] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_10开始执行
+[2019-01-02 14:15:00,245] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:00,245] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:00,245] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': 'asd', 'amount': 1000}
+[2019-01-02 14:15:00,245] [INFO] 你的预期结果是:参数错误,loanId必须是大于0的正整数
+[2019-01-02 14:15:00,245] [INFO] 请求的实际结果是:11009
+[2019-01-02 14:15:00,245] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:15:00,495] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_10结束执行,一共执行0.1636951679999994
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_bidloan.py", line 40, in test_5bidloan
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '11009' != '11005'
+- 11009
+?     ^
++ 11005
+?     ^
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_11: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_11'>通过</button>
+    <div id='div_pt1_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_11'>通过</button>
+    <div id='div_pt1_11' class="collapse in" align="left">
+    <pre>
+    
+pt1_11: [2019-01-02 14:15:00,505] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_11开始执行
+[2019-01-02 14:15:00,655] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:00,655] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:00,655] [INFO] 你的请求参数是:{'memberId': 123456, 'password': '0123456789123456789', 'loanId': '1234', 'amount': 1000}
+[2019-01-02 14:15:00,655] [INFO] 你的预期结果是:参数错误,password长度必须大于6位且小于18位
+[2019-01-02 14:15:00,655] [INFO] 请求的实际结果是:11006
+[2019-01-02 14:15:00,655] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:00,885] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_11结束执行,一共执行0.15398630999999963
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_12: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_12'>通过</button>
+    <div id='div_pt1_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_12'>通过</button>
+    <div id='div_pt1_12' class="collapse in" align="left">
+    <pre>
+    
+pt1_12: [2019-01-02 14:15:00,885] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_12开始执行
+[2019-01-02 14:15:01,066] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:01,066] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:01,066] [INFO] 你的请求参数是:{'memberId': 123456, 'password': '01234', 'loanId': '1234', 'amount': 1000}
+[2019-01-02 14:15:01,066] [INFO] 你的预期结果是:参数错误,password长度必须大于6位且小于18位
+[2019-01-02 14:15:01,066] [INFO] 请求的实际结果是:11006
+[2019-01-02 14:15:01,066] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:01,306] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_12结束执行,一共执行0.1792765499999991
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_13: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_13'>通过</button>
+    <div id='div_pt1_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_13'>通过</button>
+    <div id='div_pt1_13' class="collapse in" align="left">
+    <pre>
+    
+pt1_13: [2019-01-02 14:15:01,316] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_13开始执行
+[2019-01-02 14:15:01,506] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:01,506] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:01,506] [INFO] 你的请求参数是:{'memberId': 123456, 'password': '0123456789', 'loanId': 1234, 'amount': -1}
+[2019-01-02 14:15:01,506] [INFO] 你的预期结果是:参数错误,投资金额必须是能被100整除的正整数
+[2019-01-02 14:15:01,506] [INFO] 请求的实际结果是:11007
+[2019-01-02 14:15:01,506] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:01,736] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_13结束执行,一共执行0.18930424600000073
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_14: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_14'>通过</button>
+    <div id='div_pt1_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_14'>通过</button>
+    <div id='div_pt1_14' class="collapse in" align="left">
+    <pre>
+    
+pt1_14: [2019-01-02 14:15:01,736] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_14开始执行
+[2019-01-02 14:15:01,896] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:01,896] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:01,896] [INFO] 你的请求参数是:{'memberId': 123456, 'password': '0123456789', 'loanId': 1234, 'amount': 1.31}
+[2019-01-02 14:15:01,896] [INFO] 你的预期结果是:参数错误,投资金额必须是能被100整除的正整数
+[2019-01-02 14:15:01,896] [INFO] 请求的实际结果是:11007
+[2019-01-02 14:15:01,896] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:02,148] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_14结束执行,一共执行0.1528484790000011
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_15: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_15'>通过</button>
+    <div id='div_pt1_15' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_15'>通过</button>
+    <div id='div_pt1_15' class="collapse in" align="left">
+    <pre>
+    
+pt1_15: [2019-01-02 14:15:02,158] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_15开始执行
+[2019-01-02 14:15:02,879] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:02,879] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:02,879] [INFO] 你的请求参数是:{'memberId': 1112958, 'password': '0123456789', 'loanId': 1234, 'amount': 1000}
+[2019-01-02 14:15:02,879] [INFO] 你的预期结果是:不存在该用户
+[2019-01-02 14:15:02,879] [INFO] 请求的实际结果是:11008
+[2019-01-02 14:15:02,879] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:03,109] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_15结束执行,一共执行0.7226236220000004
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_16' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_16: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_16'>通过</button>
+    <div id='div_pt1_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_16'>通过</button>
+    <div id='div_pt1_16' class="collapse in" align="left">
+    <pre>
+    
+pt1_16: [2019-01-02 14:15:03,119] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_16开始执行
+[2019-01-02 14:15:04,789] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:04,829] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:04,829] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': 9434, 'amount': 1000}
+[2019-01-02 14:15:04,829] [INFO] 你的预期结果是:不存在该标号
+[2019-01-02 14:15:04,829] [INFO] 请求的实际结果是:11009
+[2019-01-02 14:15:04,829] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:05,079] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_16结束执行,一共执行1.6728525560000005
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_17' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_5bidloan_17: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_17'>通过</button>
+    <div id='div_pt1_17' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_17' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_17'>通过</button>
+    <div id='div_pt1_17' class="collapse in" align="left">
+    <pre>
+    
+pt1_17: [2019-01-02 14:15:05,089] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_17开始执行
+[2019-01-02 14:15:05,740] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:05,740] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:05,740] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': 6134, 'amount': 1000}
+[2019-01-02 14:15:05,740] [INFO] 你的预期结果是:该标不在竞标状态
+[2019-01-02 14:15:05,740] [INFO] 请求的实际结果是:11010
+[2019-01-02 14:15:05,740] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:05,990] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_17结束执行,一共执行0.6542483609999987
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_18' class='none'>
+    <td class='failCase'><div class='testcase'>test_5bidloan_18: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_18'>失败</button>
+    <div id='div_ft1_18' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_18' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_18'>失败</button>
+    <div id='div_ft1_18' class="collapse in" align="left">
+    <pre>
+    
+ft1_18: [2019-01-02 14:15:05,990] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_18开始执行
+[2019-01-02 14:15:06,860] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:06,860] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:06,860] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': 6134, 'amount': 1000}
+[2019-01-02 14:15:06,860] [INFO] 你的预期结果是:该标满标，无法投标
+[2019-01-02 14:15:06,860] [INFO] 请求的实际结果是:11010
+[2019-01-02 14:15:06,860] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:15:07,120] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_18结束执行,一共执行0.8713744020000007
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_bidloan.py", line 40, in test_5bidloan
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '11010' != '11011'
+- 11010
+?     ^
++ 11011
+?     ^
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_19' class='none'>
+    <td class='failCase'><div class='testcase'>test_5bidloan_19: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_19' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_19'>失败</button>
+    <div id='div_ft1_19' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_19' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_19'>失败</button>
+    <div id='div_ft1_19' class="collapse in" align="left">
+    <pre>
+    
+ft1_19: [2019-01-02 14:15:07,120] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_19开始执行
+[2019-01-02 14:15:07,361] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+[2019-01-02 14:15:07,361] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:07,361] [INFO] 你的请求参数是:{'memberId': 1112952, 'password': '1234567890', 'loanId': 1451, 'amount': 1000}
+[2019-01-02 14:15:07,361] [INFO] 你的预期结果是:该标可投金额不足
+[2019-01-02 14:15:07,361] [INFO] 请求的实际结果是:11009
+[2019-01-02 14:15:07,361] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:15:07,603] [INFO] 测试用例test_bidloan.Http_test_test_5bidloan_19结束执行,一共执行0.23699396199999967
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_bidloan.py", line 40, in test_5bidloan
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '11009' != '11012'
+- 11009
++ 11012
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_login.Http_test</td>
+    <td class="text-center">5</td>
+    <td class="text-center">5</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',5)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_2login_1: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in" align="left">
+    <pre>
+    
+pt2_1: [2019-01-02 14:15:07,633] [INFO] 测试用例test_login.Http_test_test_2login_1开始执行
+[2019-01-02 14:15:07,821] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2019-01-02 14:15:07,822] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:07,822] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2019-01-02 14:15:07,822] [INFO] 你的预期结果是:登录成功
+[2019-01-02 14:15:07,822] [INFO] 请求的实际结果是:10001
+[2019-01-02 14:15:07,822] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:08,097] [INFO] 测试用例test_login.Http_test_test_2login_1结束执行,一共执行0.17545321699999938
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_2login_2: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in" align="left">
+    <pre>
+    
+pt2_2: [2019-01-02 14:15:08,100] [INFO] 测试用例test_login.Http_test_test_2login_2开始执行
+[2019-01-02 14:15:08,435] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2019-01-02 14:15:08,435] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:08,435] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890'}
+[2019-01-02 14:15:08,435] [INFO] 你的预期结果是:手机号不能为空
+[2019-01-02 14:15:08,435] [INFO] 请求的实际结果是:20103
+[2019-01-02 14:15:08,435] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:08,695] [INFO] 测试用例test_login.Http_test_test_2login_2结束执行,一共执行0.3387063890000004
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_2login_3: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in" align="left">
+    <pre>
+    
+pt2_3: [2019-01-02 14:15:08,695] [INFO] 测试用例test_login.Http_test_test_2login_3开始执行
+[2019-01-02 14:15:08,866] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2019-01-02 14:15:08,866] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:08,866] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': ''}
+[2019-01-02 14:15:08,866] [INFO] 你的预期结果是:密码不能为空
+[2019-01-02 14:15:08,866] [INFO] 请求的实际结果是:20103
+[2019-01-02 14:15:08,866] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:09,116] [INFO] 测试用例test_login.Http_test_test_2login_3结束执行,一共执行0.168706279000002
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_2login_4: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse in" align="left">
+    <pre>
+    
+pt2_4: [2019-01-02 14:15:09,116] [INFO] 测试用例test_login.Http_test_test_2login_4开始执行
+[2019-01-02 14:15:10,110] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2019-01-02 14:15:10,110] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:10,110] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'pwd': '123456789'}
+[2019-01-02 14:15:10,110] [INFO] 你的预期结果是:用户名或密码错误
+[2019-01-02 14:15:10,111] [INFO] 请求的实际结果是:20111
+[2019-01-02 14:15:10,111] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:10,370] [INFO] 测试用例test_login.Http_test_test_2login_4结束执行,一共执行0.9903089319999978
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_2login_5: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse in" align="left">
+    <pre>
+    
+pt2_5: [2019-01-02 14:15:10,373] [INFO] 测试用例test_login.Http_test_test_2login_5开始执行
+[2019-01-02 14:15:10,566] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2019-01-02 14:15:10,567] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:10,567] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '123456789'}
+[2019-01-02 14:15:10,567] [INFO] 你的预期结果是:用户名或密码错误
+[2019-01-02 14:15:10,567] [INFO] 请求的实际结果是:20111
+[2019-01-02 14:15:10,567] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:10,856] [INFO] 测试用例test_login.Http_test_test_2login_5结束执行,一共执行0.19275126699999845
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='failClass warning'>
+    <td>test_recharge.Http_test</td>
+    <td class="text-center">12</td>
+    <td class="text-center">11</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',12)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_01: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse in" align="left">
+    <pre>
+    
+pt3_1: [2019-01-02 14:15:10,856] [INFO] 测试用例test_recharge.Http_test_test_3recharge_01开始执行
+[2019-01-02 14:15:11,098] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/login
+[2019-01-02 14:15:11,098] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:11,098] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2019-01-02 14:15:11,098] [INFO] 你的预期结果是:登录成功
+[2019-01-02 14:15:11,098] [INFO] 请求的实际结果是:10001
+[2019-01-02 14:15:11,098] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:11,366] [INFO] 测试用例test_recharge.Http_test_test_3recharge_01结束执行,一共执行0.20931585000000297
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_02: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse in" align="left">
+    <pre>
+    
+pt3_2: [2019-01-02 14:15:11,369] [INFO] 测试用例test_recharge.Http_test_test_3recharge_02开始执行
+[2019-01-02 14:15:11,540] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:11,540] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:11,540] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 0.01}
+[2019-01-02 14:15:11,540] [INFO] 你的预期结果是:充值成功
+[2019-01-02 14:15:11,540] [INFO] 请求的实际结果是:10001
+[2019-01-02 14:15:11,540] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:11,808] [INFO] 测试用例test_recharge.Http_test_test_3recharge_02结束执行,一共执行0.1775503030000003
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_03: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse in" align="left">
+    <pre>
+    
+pt3_3: [2019-01-02 14:15:11,810] [INFO] 测试用例test_recharge.Http_test_test_3recharge_03开始执行
+[2019-01-02 14:15:12,012] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:12,022] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:12,022] [INFO] 你的请求参数是:{'mobilephone': '', 'amount': 50.01}
+[2019-01-02 14:15:12,022] [INFO] 你的预期结果是:手机号不能为空
+[2019-01-02 14:15:12,022] [INFO] 请求的实际结果是:20103
+[2019-01-02 14:15:12,022] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:12,252] [INFO] 测试用例test_recharge.Http_test_test_3recharge_03结束执行,一共执行0.21055289099999897
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_4' class='none'>
+    <td class='failCase'><div class='testcase'>test_3recharge_04: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_4'>失败</button>
+    <div id='div_ft3_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_4'>失败</button>
+    <div id='div_ft3_4' class="collapse in" align="left">
+    <pre>
+    
+ft3_4: [2019-01-02 14:15:12,252] [INFO] 测试用例test_recharge.Http_test_test_3recharge_04开始执行
+[2019-01-02 14:15:12,985] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:12,985] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:12,985] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'amount': 50.1}
+[2019-01-02 14:15:12,986] [INFO] 你的预期结果是:此手机号对应的会员不存在
+[2019-01-02 14:15:12,986] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:12,986] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:15:13,228] [INFO] 测试用例test_recharge.Http_test_test_3recharge_04结束执行,一共执行0.7266980580000002
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_recharge.py", line 28, in test_3recharge
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '20109' != '20104'
+- 20109
+?     ^
++ 20104
+?     ^
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_05: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
+    <div id='div_pt3_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
+    <div id='div_pt3_5' class="collapse in" align="left">
+    <pre>
+    
+pt3_5: [2019-01-02 14:15:13,229] [INFO] 测试用例test_recharge.Http_test_test_3recharge_05开始执行
+[2019-01-02 14:15:13,448] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:13,448] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:13,449] [INFO] 你的请求参数是:{'mobilephone': '135508483891', 'amount': 50.1}
+[2019-01-02 14:15:13,449] [INFO] 你的预期结果是:手机号码格式不正确
+[2019-01-02 14:15:13,455] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:13,456] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:13,708] [INFO] 测试用例test_recharge.Http_test_test_3recharge_05结束执行,一共执行0.21708498899999995
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_06: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_6'>通过</button>
+    <div id='div_pt3_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_6'>通过</button>
+    <div id='div_pt3_6' class="collapse in" align="left">
+    <pre>
+    
+pt3_6: [2019-01-02 14:15:13,710] [INFO] 测试用例test_recharge.Http_test_test_3recharge_06开始执行
+[2019-01-02 14:15:13,872] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:13,872] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:13,872] [INFO] 你的请求参数是:{'mobilephone': '1355084831', 'amount': 50.1}
+[2019-01-02 14:15:13,872] [INFO] 你的预期结果是:手机号码格式不正确
+[2019-01-02 14:15:13,872] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:13,872] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:14,146] [INFO] 测试用例test_recharge.Http_test_test_3recharge_06结束执行,一共执行0.16481863099999927
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_07: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_7'>通过</button>
+    <div id='div_pt3_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_7'>通过</button>
+    <div id='div_pt3_7' class="collapse in" align="left">
+    <pre>
+    
+pt3_7: [2019-01-02 14:15:14,149] [INFO] 测试用例test_recharge.Http_test_test_3recharge_07开始执行
+[2019-01-02 14:15:14,334] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:14,334] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:14,334] [INFO] 你的请求参数是:{'mobilephone': '1355084831s', 'amount': 50.1}
+[2019-01-02 14:15:14,334] [INFO] 你的预期结果是:手机号码格式不正确
+[2019-01-02 14:15:14,334] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:14,334] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:14,584] [INFO] 测试用例test_recharge.Http_test_test_3recharge_07结束执行,一共执行0.18814451999999804
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_08: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_8'>通过</button>
+    <div id='div_pt3_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_8'>通过</button>
+    <div id='div_pt3_8' class="collapse in" align="left">
+    <pre>
+    
+pt3_8: [2019-01-02 14:15:14,584] [INFO] 测试用例test_recharge.Http_test_test_3recharge_08开始执行
+[2019-01-02 14:15:14,775] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:14,795] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:14,795] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': ''}
+[2019-01-02 14:15:14,795] [INFO] 你的预期结果是:请输入金额
+[2019-01-02 14:15:14,795] [INFO] 请求的实际结果是:20115
+[2019-01-02 14:15:14,795] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:15,055] [INFO] 测试用例test_recharge.Http_test_test_3recharge_08结束执行,一共执行0.18322714500000004
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_09: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_9'>通过</button>
+    <div id='div_pt3_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_9'>通过</button>
+    <div id='div_pt3_9' class="collapse in" align="left">
+    <pre>
+    
+pt3_9: [2019-01-02 14:15:15,055] [INFO] 测试用例test_recharge.Http_test_test_3recharge_09开始执行
+[2019-01-02 14:15:15,225] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:15,225] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:15,225] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 50.123}
+[2019-01-02 14:15:15,225] [INFO] 你的预期结果是:输入金额的金额小数不能超过两位
+[2019-01-02 14:15:15,225] [INFO] 请求的实际结果是:20116
+[2019-01-02 14:15:15,225] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:15,465] [INFO] 测试用例test_recharge.Http_test_test_3recharge_09结束执行,一共执行0.16766492100000008
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_10: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_10'>通过</button>
+    <div id='div_pt3_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_10'>通过</button>
+    <div id='div_pt3_10' class="collapse in" align="left">
+    <pre>
+    
+pt3_10: [2019-01-02 14:15:15,475] [INFO] 测试用例test_recharge.Http_test_test_3recharge_10开始执行
+[2019-01-02 14:15:15,655] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:15,655] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:15,655] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 500000.01}
+[2019-01-02 14:15:15,655] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2019-01-02 14:15:15,655] [INFO] 请求的实际结果是:20117
+[2019-01-02 14:15:15,655] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:15,915] [INFO] 测试用例test_recharge.Http_test_test_3recharge_10结束执行,一共执行0.18358703700000234
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_11: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_11'>通过</button>
+    <div id='div_pt3_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_11'>通过</button>
+    <div id='div_pt3_11' class="collapse in" align="left">
+    <pre>
+    
+pt3_11: [2019-01-02 14:15:15,925] [INFO] 测试用例test_recharge.Http_test_test_3recharge_11开始执行
+[2019-01-02 14:15:16,106] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:16,106] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:16,116] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': -0.01}
+[2019-01-02 14:15:16,116] [INFO] 你的预期结果是:请输入范围在0到50万之间的正数金额
+[2019-01-02 14:15:16,116] [INFO] 请求的实际结果是:20117
+[2019-01-02 14:15:16,116] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:16,356] [INFO] 测试用例test_recharge.Http_test_test_3recharge_11结束执行,一共执行0.1894547710000012
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_3recharge_12: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_12'>通过</button>
+    <div id='div_pt3_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_12'>通过</button>
+    <div id='div_pt3_12' class="collapse in" align="left">
+    <pre>
+    
+pt3_12: [2019-01-02 14:15:16,356] [INFO] 测试用例test_recharge.Http_test_test_3recharge_12开始执行
+[2019-01-02 14:15:16,526] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/recharge
+[2019-01-02 14:15:16,526] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:16,526] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'amount': 'a.01'}
+[2019-01-02 14:15:16,526] [INFO] 你的预期结果是:请输入数字
+[2019-01-02 14:15:16,526] [INFO] 请求的实际结果是:20118
+[2019-01-02 14:15:16,526] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:16,776] [INFO] 测试用例test_recharge.Http_test_test_3recharge_12结束执行,一共执行0.16558904500000082
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='failClass warning'>
+    <td>test_register.Http_test</td>
+    <td class="text-center">10</td>
+    <td class="text-center">8</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',10)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='ft4_1' class='none'>
+    <td class='failCase'><div class='testcase'>test_1register_01: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_1'>失败</button>
+    <div id='div_ft4_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_1'>失败</button>
+    <div id='div_ft4_1' class="collapse in" align="left">
+    <pre>
+    
+ft4_1: [2019-01-02 14:15:16,786] [INFO] 测试用例test_register.Http_test_test_1register_01开始执行
+[2019-01-02 14:15:17,466] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:17,466] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:17,466] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'pwd': '1234567890'}
+[2019-01-02 14:15:17,466] [INFO] 你的预期结果是:注册成功
+[2019-01-02 14:15:17,466] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:17,466] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:15:17,706] [INFO] 测试用例test_register.Http_test_test_1register_01结束执行,一共执行0.6620284470000009
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_register.py", line 18, in test_1register
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '20109' != '10001'
+- 20109
++ 10001
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft4_2' class='none'>
+    <td class='failCase'><div class='testcase'>test_1register_02: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_2'>失败</button>
+    <div id='div_ft4_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_2'>失败</button>
+    <div id='div_ft4_2' class="collapse in" align="left">
+    <pre>
+    
+ft4_2: [2019-01-02 14:15:17,716] [INFO] 测试用例test_register.Http_test_test_1register_02开始执行
+[2019-01-02 14:15:18,427] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:18,427] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:18,427] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'pwd': '$1234567890', 'regname': 'xiaojian'}
+[2019-01-02 14:15:18,427] [INFO] 你的预期结果是:注册成功
+[2019-01-02 14:15:18,427] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:18,427] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-02 14:15:18,686] [INFO] 测试用例test_register.Http_test_test_1register_02结束执行,一共执行0.7104009979999972
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python\interface_test\comm\log_decorator.py", line 22, in new_name
+    raise e
+  File "E:\python\interface_test\comm\log_decorator.py", line 17, in new_name
+    fun(*kwg)
+  File "E:\python\interface_test\test_case\test_register.py", line 18, in test_1register
+    self.assertEqual(actual,item.expect["code"])
+AssertionError: '20109' != '10001'
+- 20109
++ 10001
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_03: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse in" align="left">
+    <pre>
+    
+pt4_3: [2019-01-02 14:15:18,689] [INFO] 测试用例test_register.Http_test_test_1register_03开始执行
+[2019-01-02 14:15:18,879] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:18,879] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:18,879] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2019-01-02 14:15:18,879] [INFO] 你的预期结果是:手机号不能为空
+[2019-01-02 14:15:18,879] [INFO] 请求的实际结果是:20103
+[2019-01-02 14:15:18,879] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:19,109] [INFO] 测试用例test_register.Http_test_test_1register_03结束执行,一共执行0.18964292699999774
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_04: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_4'>通过</button>
+    <div id='div_pt4_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_4'>通过</button>
+    <div id='div_pt4_4' class="collapse in" align="left">
+    <pre>
+    
+pt4_4: [2019-01-02 14:15:19,109] [INFO] 测试用例test_register.Http_test_test_1register_04开始执行
+[2019-01-02 14:15:19,300] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:19,300] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:19,310] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '', 'regname': '简'}
+[2019-01-02 14:15:19,310] [INFO] 你的预期结果是:密码不能为空
+[2019-01-02 14:15:19,310] [INFO] 请求的实际结果是:20103
+[2019-01-02 14:15:19,310] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:19,560] [INFO] 测试用例test_register.Http_test_test_1register_04结束执行,一共执行0.19061518199999838
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_05: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
+    <div id='div_pt4_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
+    <div id='div_pt4_5' class="collapse in" align="left">
+    <pre>
+    
+pt4_5: [2019-01-02 14:15:19,560] [INFO] 测试用例test_register.Http_test_test_1register_05开始执行
+[2019-01-02 14:15:19,720] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:19,720] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:19,720] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2019-01-02 14:15:19,720] [INFO] 你的预期结果是:手机号码已被注册
+[2019-01-02 14:15:19,720] [INFO] 请求的实际结果是:20110
+[2019-01-02 14:15:19,720] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:19,950] [INFO] 测试用例test_register.Http_test_test_1register_05结束执行,一共执行0.15735601600000138
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_06: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
+    <div id='div_pt4_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
+    <div id='div_pt4_6' class="collapse in" align="left">
+    <pre>
+    
+pt4_6: [2019-01-02 14:15:19,960] [INFO] 测试用例test_register.Http_test_test_1register_06开始执行
+[2019-01-02 14:15:20,150] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:20,150] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:20,150] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890123456789'}
+[2019-01-02 14:15:20,150] [INFO] 你的预期结果是:密码长度必须为6~18
+[2019-01-02 14:15:20,150] [INFO] 请求的实际结果是:20108
+[2019-01-02 14:15:20,150] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:20,390] [INFO] 测试用例test_register.Http_test_test_1register_06结束执行,一共执行0.19136506900000327
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_07: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_7'>通过</button>
+    <div id='div_pt4_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_7'>通过</button>
+    <div id='div_pt4_7' class="collapse in" align="left">
+    <pre>
+    
+pt4_7: [2019-01-02 14:15:20,390] [INFO] 测试用例test_register.Http_test_test_1register_07开始执行
+[2019-01-02 14:15:20,551] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:20,551] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:20,551] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '12345'}
+[2019-01-02 14:15:20,551] [INFO] 你的预期结果是:密码长度必须为6~18
+[2019-01-02 14:15:20,551] [INFO] 请求的实际结果是:20108
+[2019-01-02 14:15:20,551] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:20,811] [INFO] 测试用例test_register.Http_test_test_1register_07结束执行,一共执行0.1549188810000004
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_08: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_8'>通过</button>
+    <div id='div_pt4_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_8'>通过</button>
+    <div id='div_pt4_8' class="collapse in" align="left">
+    <pre>
+    
+pt4_8: [2019-01-02 14:15:20,821] [INFO] 测试用例test_register.Http_test_test_1register_08开始执行
+[2019-01-02 14:15:21,031] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:21,031] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:21,031] [INFO] 你的请求参数是:{'mobilephone': '135508485233', 'pwd': '1234567890'}
+[2019-01-02 14:15:21,031] [INFO] 你的预期结果是:手机号码格式不正确
+[2019-01-02 14:15:21,031] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:21,031] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:21,281] [INFO] 测试用例test_register.Http_test_test_1register_08结束执行,一共执行0.21461980099999778
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_09: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_9'>通过</button>
+    <div id='div_pt4_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_9'>通过</button>
+    <div id='div_pt4_9' class="collapse in" align="left">
+    <pre>
+    
+pt4_9: [2019-01-02 14:15:21,281] [INFO] 测试用例test_register.Http_test_test_1register_09开始执行
+[2019-01-02 14:15:21,461] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:21,461] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:21,461] [INFO] 你的请求参数是:{'mobilephone': '1861122334', 'pwd': '1234567890'}
+[2019-01-02 14:15:21,461] [INFO] 你的预期结果是:手机号码格式不正确
+[2019-01-02 14:15:21,461] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:21,461] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:21,711] [INFO] 测试用例test_register.Http_test_test_1register_09结束执行,一共执行0.18294251600000067
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1register_10: 获取类名</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_10'>通过</button>
+    <div id='div_pt4_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_10'>通过</button>
+    <div id='div_pt4_10' class="collapse in" align="left">
+    <pre>
+    
+pt4_10: [2019-01-02 14:15:21,711] [INFO] 测试用例test_register.Http_test_test_1register_10开始执行
+[2019-01-02 14:15:21,872] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-02 14:15:21,872] [INFO] 你的请求方式是:post
+[2019-01-02 14:15:21,872] [INFO] 你的请求参数是:{'mobilephone': '1861122334a', 'pwd': '1234567890'}
+[2019-01-02 14:15:21,872] [INFO] 你的预期结果是:手机号码格式不正确
+[2019-01-02 14:15:21,872] [INFO] 请求的实际结果是:20109
+[2019-01-02 14:15:21,872] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-02 14:15:22,142] [INFO] 测试用例test_register.Http_test_test_1register_10结束执行,一共执行0.1609686140000015
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>46</td>
+    <td>37</td>
+    <td>9</td>
+    <td>0</td>
+    <td>通过率：80.43%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>
