@@ -7,7 +7,7 @@ from comm import constans
 '''根据模糊匹配收集测试用例，生存测试报告，报告形式有HTMLTESTreport这个py文件决定，可在网上下载其他，调用即可'''
 if __name__ == '__main__':
     file_path=constans.html_path+os.sep
-    name=time.strftime("%Y_%m_%d_%H_%M_%S")+".html"
+    name="interface_report.html"
     file_path=file_path+name
 #     suite=unittest.TestSuite()
     discover=unittest.defaultTestLoader.discover(constans.test_case_path, "test_*.py")

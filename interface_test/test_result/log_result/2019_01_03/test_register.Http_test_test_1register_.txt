@@ -1,0 +1,160 @@
+[2019-01-03 14:35:56,863] [INFO] 测试用例test_register.Http_test_test_1register_01开始执行
+[2019-01-03 14:35:57,644] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:35:57,644] [INFO] 你的请求方式是:post
+[2019-01-03 14:35:57,644] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'pwd': '1234567890'}
+[2019-01-03 14:35:57,644] [INFO] 你的预期结果是:10001
+[2019-01-03 14:35:57,644] [INFO] 请求的实际结果是:20109
+[2019-01-03 14:35:57,644] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-03 14:35:57,956] [INFO] 测试用例test_register.Http_test_test_1register_01结束执行,一共执行0.7733288079999987
+[2019-01-03 14:35:57,956] [INFO] 测试用例test_register.Http_test_test_1register_02开始执行
+[2019-01-03 14:35:58,768] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:35:58,768] [INFO] 你的请求方式是:post
+[2019-01-03 14:35:58,768] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'pwd': '$1234567890', 'regname': 'xiaojian'}
+[2019-01-03 14:35:58,768] [INFO] 你的预期结果是:10001
+[2019-01-03 14:35:58,768] [INFO] 请求的实际结果是:20109
+[2019-01-03 14:35:58,784] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-03 14:35:59,018] [INFO] 测试用例test_register.Http_test_test_1register_02结束执行,一共执行0.8145059870000004
+[2019-01-03 14:35:59,018] [INFO] 测试用例test_register.Http_test_test_1register_03开始执行
+[2019-01-03 14:35:59,191] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:35:59,191] [INFO] 你的请求方式是:post
+[2019-01-03 14:35:59,191] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2019-01-03 14:35:59,191] [INFO] 你的预期结果是:20103
+[2019-01-03 14:35:59,191] [INFO] 请求的实际结果是:20103
+[2019-01-03 14:35:59,191] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:35:59,440] [INFO] 测试用例test_register.Http_test_test_1register_03结束执行,一共执行0.16900206800000106
+[2019-01-03 14:35:59,440] [INFO] 测试用例test_register.Http_test_test_1register_04开始执行
+[2019-01-03 14:35:59,643] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:35:59,643] [INFO] 你的请求方式是:post
+[2019-01-03 14:35:59,643] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '', 'regname': '简'}
+[2019-01-03 14:35:59,643] [INFO] 你的预期结果是:20103
+[2019-01-03 14:35:59,643] [INFO] 请求的实际结果是:20103
+[2019-01-03 14:35:59,643] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:35:59,924] [INFO] 测试用例test_register.Http_test_test_1register_04结束执行,一共执行0.2097290429999994
+[2019-01-03 14:35:59,924] [INFO] 测试用例test_register.Http_test_test_1register_05开始执行
+[2019-01-03 14:36:00,142] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:36:00,142] [INFO] 你的请求方式是:post
+[2019-01-03 14:36:00,142] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2019-01-03 14:36:00,142] [INFO] 你的预期结果是:20110
+[2019-01-03 14:36:00,142] [INFO] 请求的实际结果是:20110
+[2019-01-03 14:36:00,142] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:36:00,376] [INFO] 测试用例test_register.Http_test_test_1register_05结束执行,一共执行0.20280015499999848
+[2019-01-03 14:36:00,392] [INFO] 测试用例test_register.Http_test_test_1register_06开始执行
+[2019-01-03 14:36:00,580] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:36:00,580] [INFO] 你的请求方式是:post
+[2019-01-03 14:36:00,580] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890123456789'}
+[2019-01-03 14:36:00,580] [INFO] 你的预期结果是:20108
+[2019-01-03 14:36:00,580] [INFO] 请求的实际结果是:20108
+[2019-01-03 14:36:00,580] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:36:00,939] [INFO] 测试用例test_register.Http_test_test_1register_06结束执行,一共执行0.19519938300000206
+[2019-01-03 14:36:00,939] [INFO] 测试用例test_register.Http_test_test_1register_07开始执行
+[2019-01-03 14:36:01,407] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:36:01,407] [INFO] 你的请求方式是:post
+[2019-01-03 14:36:01,407] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '12345'}
+[2019-01-03 14:36:01,407] [INFO] 你的预期结果是:20108
+[2019-01-03 14:36:01,407] [INFO] 请求的实际结果是:20108
+[2019-01-03 14:36:01,407] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:36:01,641] [INFO] 测试用例test_register.Http_test_test_1register_07结束执行,一共执行0.4653788210000016
+[2019-01-03 14:36:01,641] [INFO] 测试用例test_register.Http_test_test_1register_08开始执行
+[2019-01-03 14:36:01,860] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:36:01,860] [INFO] 你的请求方式是:post
+[2019-01-03 14:36:01,860] [INFO] 你的请求参数是:{'mobilephone': '135508485233', 'pwd': '1234567890'}
+[2019-01-03 14:36:01,860] [INFO] 你的预期结果是:20109
+[2019-01-03 14:36:01,860] [INFO] 请求的实际结果是:20109
+[2019-01-03 14:36:01,860] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:36:02,110] [INFO] 测试用例test_register.Http_test_test_1register_08结束执行,一共执行0.20817796299999713
+[2019-01-03 14:36:02,110] [INFO] 测试用例test_register.Http_test_test_1register_09开始执行
+[2019-01-03 14:36:02,297] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:36:02,297] [INFO] 你的请求方式是:post
+[2019-01-03 14:36:02,297] [INFO] 你的请求参数是:{'mobilephone': '1861122334', 'pwd': '1234567890'}
+[2019-01-03 14:36:02,297] [INFO] 你的预期结果是:20109
+[2019-01-03 14:36:02,297] [INFO] 请求的实际结果是:20109
+[2019-01-03 14:36:02,297] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:36:02,531] [INFO] 测试用例test_register.Http_test_test_1register_09结束执行,一共执行0.19018762099999975
+[2019-01-03 14:36:02,547] [INFO] 测试用例test_register.Http_test_test_1register_10开始执行
+[2019-01-03 14:36:02,796] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 14:36:02,796] [INFO] 你的请求方式是:post
+[2019-01-03 14:36:02,796] [INFO] 你的请求参数是:{'mobilephone': '1861122334a', 'pwd': '1234567890'}
+[2019-01-03 14:36:02,796] [INFO] 你的预期结果是:20109
+[2019-01-03 14:36:02,796] [INFO] 请求的实际结果是:20109
+[2019-01-03 14:36:02,796] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 14:36:03,108] [INFO] 测试用例test_register.Http_test_test_1register_10结束执行,一共执行0.25104237799999396
+[2019-01-03 17:40:35,718] [INFO] 测试用例test_register.Http_test_test_1register_01开始执行
+[2019-01-03 17:40:36,670] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:36,670] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:36,670] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'pwd': '1234567890'}
+[2019-01-03 17:40:36,670] [INFO] 你的预期结果是:10001
+[2019-01-03 17:40:36,670] [INFO] 请求的实际结果是:20109
+[2019-01-03 17:40:36,670] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-03 17:40:36,904] [INFO] 测试用例test_register.Http_test_test_1register_01结束执行,一共执行0.7892153109999995
+[2019-01-03 17:40:36,904] [INFO] 测试用例test_register.Http_test_test_1register_02开始执行
+[2019-01-03 17:40:37,764] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:37,764] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:37,764] [INFO] 你的请求参数是:{'mobilephone': '19000000000', 'pwd': '$1234567890', 'regname': 'xiaojian'}
+[2019-01-03 17:40:37,764] [INFO] 你的预期结果是:10001
+[2019-01-03 17:40:37,764] [INFO] 请求的实际结果是:20109
+[2019-01-03 17:40:37,764] [ERROR] 测试用例开始执行的结果是:Fail
+[2019-01-03 17:40:38,013] [INFO] 测试用例test_register.Http_test_test_1register_02结束执行,一共执行0.8485206339999998
+[2019-01-03 17:40:38,013] [INFO] 测试用例test_register.Http_test_test_1register_03开始执行
+[2019-01-03 17:40:38,202] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:38,202] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:38,202] [INFO] 你的请求参数是:{'mobilephone': '', 'pwd': '1234567890', 'regname': 'xiaojian'}
+[2019-01-03 17:40:38,217] [INFO] 你的预期结果是:20103
+[2019-01-03 17:40:38,217] [INFO] 请求的实际结果是:20103
+[2019-01-03 17:40:38,217] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:38,436] [INFO] 测试用例test_register.Http_test_test_1register_03结束执行,一共执行0.18688986999999813
+[2019-01-03 17:40:38,436] [INFO] 测试用例test_register.Http_test_test_1register_04开始执行
+[2019-01-03 17:40:38,623] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:38,623] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:38,638] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '', 'regname': '简'}
+[2019-01-03 17:40:38,638] [INFO] 你的预期结果是:20103
+[2019-01-03 17:40:38,638] [INFO] 请求的实际结果是:20103
+[2019-01-03 17:40:38,638] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:38,888] [INFO] 测试用例test_register.Http_test_test_1register_04结束执行,一共执行0.17731798299999824
+[2019-01-03 17:40:38,888] [INFO] 测试用例test_register.Http_test_test_1register_05开始执行
+[2019-01-03 17:40:39,122] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:39,122] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:39,122] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890'}
+[2019-01-03 17:40:39,122] [INFO] 你的预期结果是:20110
+[2019-01-03 17:40:39,122] [INFO] 请求的实际结果是:20110
+[2019-01-03 17:40:39,122] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:39,356] [INFO] 测试用例test_register.Http_test_test_1register_05结束执行,一共执行0.22969035999999932
+[2019-01-03 17:40:39,356] [INFO] 测试用例test_register.Http_test_test_1register_06开始执行
+[2019-01-03 17:40:39,560] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:39,560] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:39,560] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '1234567890123456789'}
+[2019-01-03 17:40:39,560] [INFO] 你的预期结果是:20108
+[2019-01-03 17:40:39,560] [INFO] 请求的实际结果是:20108
+[2019-01-03 17:40:39,560] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:39,794] [INFO] 测试用例test_register.Http_test_test_1register_06结束执行,一共执行0.19923548100000232
+[2019-01-03 17:40:39,794] [INFO] 测试用例test_register.Http_test_test_1register_07开始执行
+[2019-01-03 17:40:39,997] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:39,997] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:39,997] [INFO] 你的请求参数是:{'mobilephone': '13550848523', 'pwd': '12345'}
+[2019-01-03 17:40:39,997] [INFO] 你的预期结果是:20108
+[2019-01-03 17:40:39,997] [INFO] 请求的实际结果是:20108
+[2019-01-03 17:40:39,997] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:40,246] [INFO] 测试用例test_register.Http_test_test_1register_07结束执行,一共执行0.20254698299999774
+[2019-01-03 17:40:40,246] [INFO] 测试用例test_register.Http_test_test_1register_08开始执行
+[2019-01-03 17:40:40,418] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:40,418] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:40,418] [INFO] 你的请求参数是:{'mobilephone': '135508485233', 'pwd': '1234567890'}
+[2019-01-03 17:40:40,418] [INFO] 你的预期结果是:20109
+[2019-01-03 17:40:40,418] [INFO] 请求的实际结果是:20109
+[2019-01-03 17:40:40,418] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:40,668] [INFO] 测试用例test_register.Http_test_test_1register_08结束执行,一共执行0.16677180500000333
+[2019-01-03 17:40:40,668] [INFO] 测试用例test_register.Http_test_test_1register_09开始执行
+[2019-01-03 17:40:40,887] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:40,887] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:40,887] [INFO] 你的请求参数是:{'mobilephone': '1861122334', 'pwd': '1234567890'}
+[2019-01-03 17:40:40,887] [INFO] 你的预期结果是:20109
+[2019-01-03 17:40:40,887] [INFO] 请求的实际结果是:20109
+[2019-01-03 17:40:40,887] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:41,152] [INFO] 测试用例test_register.Http_test_test_1register_09结束执行,一共执行0.2094511929999996
+[2019-01-03 17:40:41,152] [INFO] 测试用例test_register.Http_test_test_1register_10开始执行
+[2019-01-03 17:40:41,386] [INFO] 你请求的URL地址是:http://test.lemonban.com/futureloan/mvc/api/member/register
+[2019-01-03 17:40:41,386] [INFO] 你的请求方式是:post
+[2019-01-03 17:40:41,386] [INFO] 你的请求参数是:{'mobilephone': '1861122334a', 'pwd': '1234567890'}
+[2019-01-03 17:40:41,386] [INFO] 你的预期结果是:20109
+[2019-01-03 17:40:41,386] [INFO] 请求的实际结果是:20109
+[2019-01-03 17:40:41,386] [INFO] 测试用例开始执行的结果是:Pass
+[2019-01-03 17:40:41,636] [INFO] 测试用例test_register.Http_test_test_1register_10结束执行,一共执行0.2300646149999963
