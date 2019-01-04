@@ -17,7 +17,7 @@ class Test_Think_sns(unittest.TestCase):
 
     @log_decorator   
     def test_login(self):
-        self.lp.loging("13550848524","13550848524")
+        self.lp.loging("13550848523","13550848523")
 
             
         
